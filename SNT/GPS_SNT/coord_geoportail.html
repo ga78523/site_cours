@@ -1,0 +1,252 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Page d’exemple>
+    <meta name=" keywords" content="HTML5, CSS3">
+    <meta name="author" content="Eric Galand">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <title>Exemple </title>
+    <link rel="stylesheet" media="screen" href="../../style_monsite.css">
+    <link href="../../prism.css" rel="stylesheet" />
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+
+            <div class="col-12">
+                <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                    <a class="navbar-brand" href="../../index_site.html">Accueil</a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse"
+                        data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav mr-auto">
+
+
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    SNT
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <a class="dropdown-item" href="../accueil_internet.html">Internet</a>
+                                    <a class="dropdown-item" href="../accueil_web.html">Web</a>
+                                    <a class="dropdown-item" href="../accueil_donnees.html">Les données structurées et
+                                        leur traitement</a>
+                                    <a class="dropdown-item" href="../accueil_image.html">La photographie numérique</a>
+                                    <a class="dropdown-item" href="../accueil_gps.html">Localisation, cartographie et
+                                        mobilité</a>
+                                    <a class="dropdown-item" href="../accueil_iot.html">Informatique embarquée</a>
+                                    <a class="dropdown-item" href="../accueil_reseaux.html">Réseaux sociaux</a>
+                                    <a class="dropdown-item" href="../accueil_python.html">Python</a>
+
+                                </div>
+
+                            </li>
+
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    NSI
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <a class="dropdown-item" href="#"></a>
+                                    <a class="dropdown-item" href="#">Cours Première></a>
+                                    <div class="dropdown-divider"></div>
+                                    <a class="dropdown-item" href="#">Cours Terminale</a>
+                                </div>
+
+                            </li>
+
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    Physique
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <a class="dropdown-item" href="#">Action</a>
+                                    <a class="dropdown-item" href="#">Another action</a>
+                                    <div class="dropdown-divider"></div>
+                                    <a class="dropdown-item" href="#">Something else here</a>
+                                </div>
+
+                            </li>
+
+                        </ul>
+
+                    </div>
+                </nav>
+
+            </div>
+        </div>
+
+
+
+
+
+
+        <div class="row">
+            <div class="col-12">
+                <h1>Comprendre les coordonnées
+                    géographiques et manipuler des
+                    cartes numériques</h1>
+
+                <h2>Introduction</h2>
+
+                <p>La cartographie est essentielle pour beaucoup d’activités : agriculture, urbanisme, transports,
+                    loisirs, etc.
+                    Elle a été révolutionnée par l’arrivée des cartes numériques accessibles depuis les ordinateurs,
+                    tablettes et
+                    téléphones, bien plus souples à l’usage que les cartes papier.</p>
+                <p>En outre, certains projets collaboratifs comme OpenStreetMap permettent à tous les utilisateurs
+                    d’ajouter
+                    des informations à une carte numérique en libre accès, qui deviennent alors visibles par tous les
+                    utilisateurs</p>
+                <p>Nous verrons dans ce document, comment se repère t-on sur la Terre ? Comment trouver les coordonnées
+                    d’un lieu ? Comment utiliser une carte numérique ?</p>
+
+                <h2>Rappels</h2>
+                <h3>Se repérer sur Terre</h3>
+                <p>Les coordonnées géographiques (ou repères géographiques) sont un système de trois éléments :
+                    <ul>
+                        <li>la longitude ;</li>
+                        <li>la latitude ;</li>
+                        <li>l’altitude ou élévation par rapport au niveau de la mer.</li>
+                    </ul>
+                    <p>Les coordonnées géographiques d’un point M sont
+                        donc formées par un triplet (λ,φ, h) où :
+                        <ul>
+                            <li>λ (lambda) est la longitude, qui est l’angle par
+                                rapport au méridien d’origine ;</li>
+                            <li>φ (phi) est la latitude, qui est l’angle par rapport
+                                à l’équateur ;</li>
+                            <li>h est l’altitude (ou l’élévation) par rapport au
+                                niveau de la mer.</li>
+                        </ul>
+
+                    </p>
+                    <img src="img/coord1.png" class="img-fluid">
+
+
+                    <p>Pour se repérer à la surface de la Terre, on peut se contenter de donner les deux premières
+                        coordonnées
+                        (longitude, latitude).</p>
+                    <p>La longitude varie de 0° à 180° Est et de 0° à 180° Ouest tandis que La latitude varie de 0° à 90
+                        ° Nord
+                        et de 0° à 90° Sud.</p>
+                    <img src="img/coord2.png" class="img-fluid">
+
+                    <p>Sur l’exemple ci-dessous, le point rouge a pour coor-
+                        données 60° Est ; 50° Nord</p>
+                    <img src="img/coord3.png" class="img-fluid">
+
+                    <h3>De la sphère à la carte plane</h3>
+                    <p>Pour passer d’une sphère à une carte plane, les cartographes utilisent une projection
+                        cartographique, c’est
+                        à dire un ensemble de techniques géodésiques permettant de représenter une surface non plane
+                        (surface de la
+                        Terre, d’un autre corps céleste, du ciel, ...) dans son ensemble ou en partie sur la surface
+                        plane d’une carte. Il
+                        existe différents types de projections. Mais quelque soit la projection utilisée, les
+                        déformations des distances,
+                        des formes et des angles sont inévitables.</p>
+                    <p>Voir : <a
+                            href="https://fr.wikipedia.org/wiki/Liste_de_projections_cartographiques">https://fr.wikipedia.org/wiki/Liste_de_projections_cartographiques</a>
+                    </p>
+                    <p>L’informatique a apporté des outils de calcul puissants pour traiter les problèmes de projection
+                        et le
+                        passage d’une représentation à une autre.</p>
+                    <p>Les angles Longitude et Latitude sont alors mis en
+                        relation avec des coordonnées sur ces cartes planes.</p>
+                    <p>Exemple avec la figure ci-dessous :</p>
+                    <img src="img/coord4.png" class="img-fluid">
+
+                    <p>Carte du monde montrant la latitude et la longitude, suivant une projection de type Eckert IV. La
+                        latitude est marquée suivant l’axe vertical, mais la longitude n’est pas mesurable directement
+                        par une mesure
+                        horizontale, car cette distance est réduite aux pôles, pour mieux correspondre aux distances
+                        terrestres réelles,
+                        sans pouvoir toutefois donner des distances exactes.</p>
+                    <h3>Les sites d’informations géographiques</h3>
+                    <p>Géoportail est un portail web public d’informations géographiques. Il a été conçu par l’IGN et
+                        inauguré
+                        en juin 2006, soit deux mois après le lancement de la version française de Google Maps. Souvent
+                        opposés en
+                        terme de concurrence, les deux outils ont des objectifs et des modèles
+                        différents.</p>
+                    <p>Géoportail couvre exclusivement le territoire français quand Google Maps offre une représentation
+                        com-
+                        plète du globe. Autre différence notable, la qualité des informations fournies par Géoportail
+                        (en ce qui
+                        concerne les données images surtout) est égale quel que soit le lieu ciblé quand Google Maps
+                        concentre ses
+                        efforts sur les espaces qui représentent pour la société de Mountain View un réel intérêt. Car
+                        si le premier
+                        est un service public, l’autre reste une entreprise commerciale qui doit faire des profits.</p>
+                    <p>Un résumé hâtif permet de penser que le territoire rural français est plus richement représenté
+                        par Géo-
+                        portail, notamment par le biais des différentes couches -cadastrales, historiques, etc.- que les
+                        zones urbaines,
+                        plus détaillées sur Google Maps car plus porteuses d’informations monétisables.</p>
+                    <p>A ces deux acteurs s’ajoute OpenStreetMap, projet cartographique collaboratif mondial lancé en
+                        2004,
+                        soit au même moment que la version US de Google Maps. Exemple parfait de la culture du “libre”,
+                        à l’instar
+                        d’un Wikipédia (2001), OSM permet à chacun de renseigner des informations sur des cartes
+                        satellitaires à
+                        l’aide d’outils disponibles sur l’interface en ligne.</p>
+
+                    <h2>Découverte et utilisation de Géoportail</h2>
+                    <h3>Recherche de coordonnées géographiques d’un lieu</h3>
+                    <p>Sur le site <a href="https://www.geoportail.gouv.fr">https://www.geoportail.gouv.fr</a>, trouver les coordonnées géographiques de la Tour Eiffel,
+                        de votre lycée, de chez vous. Vous répondrezà cette question dans un fichier texte.</p>
+                
+                        <p> <b>Remarque : </b>une fois que vous avez trouver le lieu qui vous intéresse, pour déterminer ses coordonnées, il
+                        faut faire soit un clic droit à partir du lieu puis adresse/coordonnée du lieu soit aller la fenêtre à droite outils
+                        puis dans Outils principaux et enfin Afficher les coordonnées</p>
+
+                    <h3>Utilisation d’outils informatiques</h3>
+                    <ol>
+                        <li>A  l’aide de l’outil mesure de distance, mesurer, sur la photo, les dimensions du gymnase de notre lycée.</li>
+                        <li>A l’aide de l’outil de mesure de surface, chercher une estimation de la surface totale du gymnase de
+                        notre lycée.</li>
+                        <li>A l’aide de l’outil de l’outil Calculer un itinéraire, calculer le temps mis par un piéton et la distance
+                        entre notre lycée et la mairie de Chaumont.</li>
+                    </ol>
+                    <h3>Utilisation de différents fonds de carte</h3>
+                    <ol>
+                        <li>En restant sur une vue globale de Chaumont, utiliser différents fonds de carte (en haut à gauche,
+                            cliquer sur Carte) pour afficher des renseignements différents et issus de différentes époques de cette
+                            zone géographique. En comparant les photos aériennes et les cartes de 1950 à celles d”aujourd’hui, que remarquez-vous
+                            sur l’évolution urbaine de Chaumont ?</li>
+                    </ol>
+            </div>
+        </div>
+        <!-- MathJax -->
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+        <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+        <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+            crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+            integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+            crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+            integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+            crossorigin="anonymous"></script>
+        <script src="../../prism.js"></script>
+    </div>
+</body>
+
+</html>

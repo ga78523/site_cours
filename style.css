@@ -1,0 +1,23 @@
+body{
+    background-color:rgb(39, 158, 75);
+}
+
+h1{
+    font-size: 100pt;
+    border:solid;
+}
+p{
+    color:blue;
+    font-style:italic;
+    border:solid;
+
+}
+
+b{
+display:block;
+
+}
+#gras{
+color:gainsboro;
+
+}

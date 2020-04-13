@@ -1,0 +1,217 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Page d’exemple>
+    <meta name=" keywords" content="HTML5, CSS3">
+    <meta name="author" content="Eric Galand">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <title>Exemple </title>
+    <link rel="stylesheet" media="screen" href="../../style_monsite.css">
+    <link href="../../prism.css" rel="stylesheet" />
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+
+            <div class="col-12">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="../../index_site.html">Accueil</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav mr-auto">
+                             
+
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    SNT
+                  </a>
+                  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="../accueil_internet.html">Internet</a>
+                    <a class="dropdown-item" href="../accueil_web.html">Web</a>
+                    <a class="dropdown-item" href="../accueil_donnees.html">Les données structurées et leur traitement</a>
+                    <a class="dropdown-item" href="../accueil_image.html">La photographie numérique</a>
+                    <a class="dropdown-item" href="../accueil_gps.html">Localisation, cartographie et mobilité</a>
+                    <a class="dropdown-item" href="../accueil_iot.html">Informatique embarquée</a>
+                    <a class="dropdown-item" href="../accueil_reseaux.html">Réseaux sociaux</a>
+                    <a class="dropdown-item" href="../accueil_python.html">Python</a>
+                    
+                  </div>
+                  
+                </li>
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      NSI
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#"></a>
+                        <a class="dropdown-item" href="#">Cours Première></a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Cours Terminale</a>
+                      </div>
+                    
+                  </li>
+
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                     Physique
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <a class="dropdown-item" href="#">Action</a>
+                      <a class="dropdown-item" href="#">Another action</a>
+                      <div class="dropdown-divider"></div>
+                      <a class="dropdown-item" href="#">Something else here</a>
+                    </div>
+                    
+                  </li>
+               
+              </ul>
+              
+            </div>
+          </nav>
+
+          </div>
+        </div>
+
+
+
+
+
+
+        <div class="row">
+            <div class="col-12">
+                <h1>Open Street Map et Python</h1>
+
+                <h2>Open Street Map (OSM)</h2>
+                <p>OpenStreetMap (OSM - https://www.openstreetmap.org) est un projet de cartographie libre
+                    du monde (permettant par exemple de créer des cartes sous licence libre), en utilisant le système GPS et
+                    d'autres données libres. Il a la particularité d’être collaboratif, c’est à dire que chaque utilisateur peut
+                    participer à titre individuel à OpenStreetMap, pour décrire des lieux qu’il connaît bien.</p>
+                <p>Il a été mis en route en juillet 2004 par Steve Coast au University College de Londres et compte
+                    aujourd’hui plus de 4 500 000 contributeurs.</p>
+                <p>En France, il est de plus en plus utilisé par les collectivités (communes, départements) pour
+                    collecter de façon participative des données sur leur territoire.</p>
+
+
+
+                <img src="img/map.png"   class="img-fluid" alt="Carte Chaumont"> 
+
+                <h2>Découverte D'OSM</h2>
+                 <h3>Les coordonnées</h3>  
+                <p>
+                    <ol>
+                        <li>Dans OpenStreetMap (<a href="https://www.openstreetmap.org">https://www.openstreetmap.org</a>) utiliser la recherche pour aller aux
+                            coordonnées : (-22.91213,-43.23013). Où est-on arrivé (lieu, ville, pays) ?. Répondre à ces questions dans un fichier texte.</li>
+                        <li>A quoi correspondent ces coordonnées ?</li>
+                            <li>Où serait-on allé si on avait cherché le lieu de coordonnées (-43.23013, -22.91213) ?</li>
+                        </ol>
+                </p>
+                <h3>Utilisation des couches de cartes</h3>
+                <p>
+                    <ol>
+                        <li>Chercher la ville de Dijon et faire apparaître la couche de carte « transport »
+                            Pour cela, il faut cliquer en haut à droite sur l'icône. <img src="img/couches.png"  width="40px" alt="Couches OSM"> </li>
+                        <li>Quelle ligne de bus permet de rejoindre la Toison d'Or, complexe situé au nord de Dijon, au 
+                            centre de cette ville (place de la République par exemple) ?</li>
+                        </ol>
+                    </p>        
+                <h3>Utilisation des itinéraires</h3>
+                    <ol>
+                        <li>Un de vos camarades  part de Verbiesles pour arriver au lycée 
+                            Charles de Gaulle à Chaumont. Quelle est la distance entre ces deux lieux ?
+                            Combien  de temps mettrait-il ? Quel est le dénivelé positif , négatif entre 
+                            ces deux points ?
+                        </li>    
+                    </ol>
+
+                <h2> Cartographie et Python</h2> 
+                <h3>Contexte</h3>
+                <p>Nous allons utiliser les cartes proposées par Open Street Map et le langage Python afin de
+                    générer des cartes personnalisées. Plus exactement, nous allons utiliser une bibliothèque Python
+                    nommée Folium. Une bibliothèque Python permet de rajouter des fonctionnalités au langage de base.
+                    Folium va donc nous permettre de créer nos propres cartes à partir des cartes proposées par Open
+                    Street Map</p>
+                <p><b>Remarque importante :</b> la librairie « Folium » doit être installée au préalable. Pour cela, consulter 
+                <a href="thonny_blblio.pdf">cette page </a>
+                </p>
+                </p> 
+                
+                <h3>Création d'une carte personnalisée</h3>
+                <p>
+                 <ul>
+                <li>Créer un dossier nommé par exemple "cartOSM"
+                    et enregistrer dans ce dossier un fichier Python
+                    contenant les lignes de code suivantes :</li>
+                 </ul>   
+
+                </p>
+                <pre><code class="language-python">
+import folium
+maCarte= folium.Map(location=[47.255982,-1.524715])
+maCarte.save('Carte.html')   
+                    </code></pre>
+
+                    <p><ul>
+                        <li>Exécuter le code ci-dessus et vérifier qu’un fichier "Carte.html" a été créé.
+                            (Double-cliquer sur ce fichier devrait ouvrir un navigateur web avec une carte centrée sur un stade d’une ville
+                            célèbre... Nous avons une véritable carte et pas une simple image : il est possible de zoomer ou de se déplacer).</li>
+                        <li>Modifier le programme du paragraphe précédent pour qu'il génère une carte centrée sur la ville de
+                            votre choix. </li>
+                    
+                        </ul>
+                    </p>
+                    <p>Rappel : la longitude et la latitude d'une ville peuvent être trouvées aussi avec géoportail.                     </p>
+                    <p>Remarque : il est possible d'obtenir un niveau de zoom
+                        en ajoutant un paramètre « zoom_start"
+                        dans votre programme. Par exemple :</p>
+<pre><code class="language-python">
+import folium
+maCarte= folium.Map(location=[47.255982,-1.524715],zoom_start=15)
+maCarte.save('Carte.html')  
+</code></pre>
+<p><ul>
+    <li>Afin de vraiment personnaliser la carte, il est possible d'ajouter des marqueurs sur la carte. Un marqueur sera simplement
+        défini par ses coordonnées (latitude et longitude).</li>
+   
+
+    </ul>
+</p>
+<pre><code class="language-python">
+import folium
+maCarte= folium.Map(location=[47.95861 , 0.219394],zoom_start=20)
+folium.Marker([47.959185 , 0.22317]).add_to(maCarte)
+maCarte.save('ihavethecard.html')
+    </code></pre>
+    <p><b>Remarque :</b> Il est possible d'associer une information à un marqueur en ajoutant le paramètre "popup" comme par exemple :
+        <code>folium.Marker([47.959185 , 0.22317],popup="stade MMArena").add_to(c)</code>
+        Il suffira de cliquer sur le marqueur pour que l'information définie par le paramètre "popup" apparaisse à l'écran.</p>
+         <ul>
+            <li>Copier/Coller votre carte dans votre fichier texte.</li>
+         </ul>           
+
+                    
+                <!-- Optional JavaScript -->
+                <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+                <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+                    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+                    crossorigin="anonymous"></script>
+                <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+                    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+                    crossorigin="anonymous"></script>
+                <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+                    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+                    crossorigin="anonymous"></script>
+                <script src="../../prism.js"></script>
+            </div>
+</body>
+
+</html>

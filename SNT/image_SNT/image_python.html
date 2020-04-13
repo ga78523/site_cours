@@ -1,0 +1,259 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Page d’exemple>
+    <meta name=" keywords" content="HTML5, CSS3">
+    <meta name="author" content="Eric Galand">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <title>Exemple </title>
+    <link rel="stylesheet" media="screen" href="../../style_monsite.css">
+    <link href="../../prism.css" rel="stylesheet" />
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+
+            <div class="col-12">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="../../index_site.html">Accueil</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav mr-auto">
+                             
+
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    SNT
+                  </a>
+                  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="../accueil_internet.html">Internet</a>
+                    <a class="dropdown-item" href="../accueil_web.html">Web</a>
+                    <a class="dropdown-item" href="../accueil_donnees.html">Les données structurées et leur traitement</a>
+                    <a class="dropdown-item" href="../accueil_image.html">La photographie numérique</a>
+                    <a class="dropdown-item" href="../accueil_gps.html">Localisation, cartographie et mobilité</a>
+                    <a class="dropdown-item" href="../accueil_iot.html">Informatique embarquée</a>
+                    <a class="dropdown-item" href="../accueil_reseaux.html">Réseaux sociaux</a>
+                    <a class="dropdown-item" href="../accueil_python.html">Python</a>
+                    
+                  </div>
+                  
+                </li>
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      NSI
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#"></a>
+                        <a class="dropdown-item" href="#">Cours Première></a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Cours Terminale</a>
+                      </div>
+                    
+                  </li>
+
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                     Physique
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <a class="dropdown-item" href="#">Action</a>
+                      <a class="dropdown-item" href="#">Another action</a>
+                      <div class="dropdown-divider"></div>
+                      <a class="dropdown-item" href="#">Something else here</a>
+                    </div>
+                    
+                  </li>
+               
+              </ul>
+              
+            </div>
+          </nav>
+
+          </div>
+        </div>
+
+
+
+
+
+
+        <div class="row">
+            <div class="col-12">
+                <h1>L'image avec Python</h1>
+
+                <h2>Chargement d'une image avec PIL</h2>
+                <p>
+                    La bibliothèque PIL (Python Imaging Librairy) permet de traiter des images avec Python. Elle est
+                    conçue de
+                    manière à offrir un accès rapide aux données contenues dans une image. Cette bibliothèque est
+                    incluse dans l'IDE
+                    Edupython.</p>
+
+                <p>Pour charger et afficher une image avec PIL :</p>
+                <pre><code class="language-python">
+from PIL import Image,ImageDraw                
+img=Image.open("iguane.jpg")
+img.show()
+</code></pre>
+
+
+                <p>L'image nommée iguane.jpg doit être dans le même dossier que le script python. L'instruction de la
+                    ligne 3
+                    permet de charger l'image est de l'affecter dans une variable de type Image nommée img.</p>
+
+                <h2>Définition d'une image</h2>
+                <p>La méthode <code>width</code> appliquée à l'image nommée img retourne la largeur de l'image en pixels
+                    et la méthode <code>height</code> retourne sa hauteur en pixel également :</p>
+                <pre><code class="language-python">
+from PIL import Image,ImageDraw                       
+img=Image.open("iguane.jpg")
+largeur=img.width
+longueur=img.height
+print("La largeur de l'image est :",largeur)
+print("La longueur de l'image est :",longueur)
+</code></pre>
+
+                <p>
+                    <span class="Exercice">Charger une image de votre choix et rajouter au programme une instruction
+                        qui pemet d'afficher la définition de l'image.</span></p>
+
+
+                <h2>Obtention des composantes RVB d'une image</h2>
+                <h3> Repérage d'un pixel</h3>
+
+                <p>Dans un premier temps, il est nécessaire de connaître les coordonnées du pixel dans
+                    l'image. Afin de repérer un pixel dans une image, Python utilise un système d'axe dont
+                    l'origine est le coin supérieur gauche de l'image. L'axe des abscisses est orienté vers la
+                    droite mais attention, l'axe des ordonnées est orienté vers le bas. </p>
+
+                <div class="row">
+                    <div class="col-12">
+                        <img src="img/Axes.png" class="img-fluid" alt="desktop logo">
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-12">
+
+
+                        <h3>Obtention des composantes RVB du pixel</h3>
+                        <p>Afin de déterminer les composantes RVB, on utilise la méthode <code>getpixel()</code> :</p>
+
+                        <pre><code class="language-python">
+couleur=img.getpixel((x,y))
+print(couleur)
+</code></pre>
+
+                        <p>On peut créer 3 nouvelles variables R, V et B et leur affecter chacune une des 3 valeurs du
+                            tuple :</p>
+
+
+                        <pre><code class="language-python">
+R,V,B=couleur
+print("La composante rouge= : ",R)
+print("La composante verte :",V)
+print("La composante bleue : ",B)	
+</code></pre>
+
+
+                        <h2> Séparation des trois couches RVB</h2>
+                        <p>Afin de séparer les 3 couches RVB de l'image iguane.jpg, nous allons dans un premier temps
+                            créer 3 images
+                            vierges de type RGB de même largeur et hauteur que l'image d'origine <code>image0</code>.
+                            Nous les nommerons <code>imageR</code>, <code>imageV</code> et <code>imageB</code>.</p>
+
+                        <pre><code class="language-python">
+from PIL import Image
+image0=Image.open("iguane.jpg)
+imageR=Image.new("RGB",(image0.width,image0.height))
+</code></pre>
+
+
+
+                        <p>Ensuite il faut balayer chaque pixel de l'image d'origine puis :</p>
+
+                        <ul>
+                            <li>Extraire ses 3 composantes R,V et B (vu précédemment) ;</li>
+
+                            <pre><code class="language-python">
+ R,V,B=image0.getPixel((x,y))
+ </code></pre>
+                            <li>Attribuer la couleur (R,0,0) au pixel correspondant de <code>imageR</code> ;</li>
+
+                            <pre><code class="language-python">
+imageR.putpixel((x,y)),(R,0,0))
+</code></pre>
+
+
+                            <li>Attribuer la couleur (0,V,0) au pixel correspondant de <code>imageV</code> ;</li>
+
+                            <li> Attribuer la couleur (0,0,B) au pixel correspondant de <code>imageB</code>.</li>
+                        </ul>
+
+                        <p>Il ne reste ensuite plus qu'à afficher ces 3 images éventuellement à les sauvegarder</p>
+
+                        <pre><code class="language-python">
+imageR.save("imageR.jpg")
+</code></pre>
+
+                        <p>Écrire le script et lancer le programme.</p>
+
+
+
+                        <h2>Transformation d'une image en niveaux de gris</h2>
+                        Une image en niveau de gris est une image dont les 3 composantes R,V,B sont identiques.
+
+                        Afin d'effectuer cette transformation, il faut dans un premier temps créer une image vierge de
+                        type RGB de même largeur et hauteur que l'image l'origine <code>imageO</code>. Nous la nommerons
+                        <code>imageG</code>.
+
+                        Ensuite il faut balayer chaque pixel de l'image d'origine puis :
+                        <ul>
+                            <li>Extraire ses 3 composantes R,V et B ;</li>
+                            <li> Effectuer la moyenne de ces 3 composantes et affecter la valeur moyenne à une variable
+                                G.</li>
+                            <li> Attribuer la couleur (G,G,G) au pixel correspondant de l'image.</li>
+                        </ul>
+
+
+                        <span class="Exercice">Écrire le script et lancer le programme.</span>
+
+                        <h2>Négatif d'une image</h2>
+
+                        <span class="Exercice">Afin de réaliser le négatif d'une image, affecter à chaque pixel de
+                            l'image de couleur (R,G,B) un pixel
+                            de couleur (255-R, 255-V, 255-B). Écrire le script et lancer le programme.</span>
+
+                        <p class="correction"> Pour la correction des exercices : cliquez sur ce lien <a href="exercices_python_corr.html"> ici</a></p>
+
+                    </div>
+                </div>
+              
+
+
+                <!-- Optional JavaScript -->
+                <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+                <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+                    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+                    crossorigin="anonymous"></script>
+                <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+                    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+                    crossorigin="anonymous"></script>
+                <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+                    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+                    crossorigin="anonymous"></script>
+                <script src="../../prism.js"></script>
+            </div>
+</body>
+
+</html>

@@ -1,0 +1,263 @@
+<!doctype html>
+<html lang="fr">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Image">
+    <meta name=" keywords" content="HTML5, CSS3">
+    <meta name="author" content="Eric Galand">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <title>Image définition</title>
+    <link rel="stylesheet" media="screen" href="../../style_monsite.css">
+    <!-- Css code -->
+    <link href="../../prism.css" rel="stylesheet" />
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+
+            <div class="col-12">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="../../index_site.html">Accueil</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav mr-auto">
+                             
+
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    SNT
+                  </a>
+                  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="../accueil_internet.html">Internet</a>
+                    <a class="dropdown-item" href="../accueil_web.html">Web</a>
+                    <a class="dropdown-item" href="../accueil_donnees.html">Les données structurées et leur traitement</a>
+                    <a class="dropdown-item" href="../accueil_image.html">La photographie numérique</a>
+                    <a class="dropdown-item" href="../accueil_gps.html">Localisation, cartographie et mobilité</a>
+                    <a class="dropdown-item" href="../accueil_iot.html">Informatique embarquée</a>
+                    <a class="dropdown-item" href="../accueil_reseaux.html">Réseaux sociaux</a>
+                    <a class="dropdown-item" href="../accueil_python.html">Python</a>
+                    
+                  </div>
+                  
+                </li>
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      NSI
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#"></a>
+                        <a class="dropdown-item" href="#">Cours Première></a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Cours Terminale</a>
+                      </div>
+                    
+                  </li>
+
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                     Physique
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <a class="dropdown-item" href="#">Action</a>
+                      <a class="dropdown-item" href="#">Another action</a>
+                      <div class="dropdown-divider"></div>
+                      <a class="dropdown-item" href="#">Something else here</a>
+                    </div>
+                    
+                  </li>
+               
+              </ul>
+              
+            </div>
+          </nav>
+
+          </div>
+        </div>
+
+        <div class="row">
+
+            <div class="col-12">
+                <h1>Du capteur CCD au fichier image</h1>
+
+                <h2>Principe d’un appareil photo numérique</h2>
+
+                <h3>Formation d’une image sur une surface photosensible</h3>  
+                
+                
+                <p class="flotte">
+                    <img src="img/appareilPhoto.png" class="img-fluid"alt="Nouveau !" width="400px" />
+                   
+                   Un appareil photo est composé d’une lentille qui va former une
+                    image réduite sur une surface photosensible. Autrefois, la surface
+                    photosensible était une pellicule photographique argentique, au-
+                    jourd’hui la pellicule est remplacée par un capteur CCD ou un
+                    capteur CMOS.</p>
+
+
+
+
+
+
+
+                 <p>Un appareil photo est composé d’une lentille qui va former une
+                    image réduite sur une surface photosensible. Autrefois, la surface
+                    photosensible était une pellicule photographique argentique, au-
+                    jourd’hui la pellicule est remplacée par un capteur CCD ou un
+                    capteur CMOS.</p>  
+                <p>Un capteur CCD est une surface photosensible composée d’un grand nombre de photosites. Plus l’in-
+                    tensité lumineuse reçue par le photosite est importante plus le photosite produira une tension électrique
+                    importante (effet photoélectrique). Cette tension électrique sera ensuite "convertie" en un nombre (on parle
+                    de numérisation) qui sera fonction de la quantité de lumière reçue.</p>
+                
+                <h3>Nécessité d’une matrice de Bayer</h3>
+
+                <p>Si l’on se contentait de ce système, nous aurions uniquement des
+                    images en niveau de gris. Afin de pouvoir gérer les couleurs, on rajoute
+                    un filtre coloré devant chaque photosite. On utilise des filtres rouges
+                    (qui ne laissent passer que le rouge), des filtres verts et des filtres bleus
+                    qui correspondent aux 3 couleurs primaires.</p>
+
+
+                    <img src="img/ecran.png" class="img-fluid"alt="Nouveau !" width="200px" />
+
+                    <img src="img/matriceBayer.png" class="img-fluid"alt="Nouveau !" />
+
+                    
+                
+                <p>L’image ci-dessus montre que les matrices dites "de Bayer" sont
+                    constituées de 50% de filtres verts, de 25% de filtres rouges et de 25%
+                    de filtres bleus. Cette répartition est adaptée à la physiologie de l’oeil
+                    humain qui est nettement plus sensible à la couleur verte qu’aux cou-
+                    leurs bleue et rouge. L’association de 4 photosites (deux verts, un rouge
+                    et un bleu) permettra de fournir les informations de couleur d’un pixel
+                    de l’image.</p>
+
+
+                    <img src="img/ecranBayer.png" class="img-fluid"alt="Nouveau !" width="200px"/>
+
+                <h2>2) Les caractéristiques d’une image</h2>
+                <h3>La définition d’une image</h3>
+                    <p>La définition d’une image correspond au nombre de pixels qui la composent. Une image ayant une
+                        définition de 4000×3000 est composée de 4000 pixels en largeur et de 3000 pixels en hauteur, soit en
+                        tout 4000× 3000 = 12 millions de pixels=12 M pixels</p>
+
+
+                <h3>La résolution</h3>
+                <p>La résolution d’une image est le nombre de pixels par unité de longueur . Elle s’exprime en pixels par
+                    pouce (ppp), en anglais en dots per inch (dpi). Sachant qu’un pouce mesure 2,54 cm, une résolution
+                    de 2400 ppp signifie que l’image a une définition de 2400 points sur une longueur de 2,54 cm.</p>
+                <p><b>Remarque :</b> la résolution de l’image ne doit pas être confondue avec la résolution du capteur (en nombre
+                    de photosites par pouce) qui est généralement bien plus grande que la résolution de l’image.</p>
+                
+                <p>Exercice 1 : Soit une image de définition 4000× 6000 pixels que l’on imprime sur du papier photo de taille
+                    19,8 cm × 29,7 cm. Calculer la résolution de cette image en pixels par cm puis en pixels par pouce (ppp).</p>
+
+                <p>Exercice 2 :
+                    Calculer la résolution d’un capteur plein format (24 mm x 36 mm) qui a permis de saisir
+                    l’image de définition 4000 × 6000 pixels mentionnée dans la question Q1. Comparer les 2 résolutions.</p>
+                   
+                <p>Exercice 3 : Sachant que l’on estime que pour avoir une impression de qualité il faut atteindre une
+                    résolution de 300 ppp, calculer la définition minimale d’une image dans le cas d’une impression sur du papier
+                    photo de dimensions 10 cm × 15 cm.</p>
+
+
+                <p>Exercice 4 :
+                    Écrire un programme qui :
+                    <ol>
+                        <li>demande à l’utilisateur la largeur ou la hauteur de l’écran ou de la feuille ;</li>
+                        <li>demande ensuite à l’utilsateur le nombre de pixels correspondant à la dimension ci-dessus ;</li>
+                        <li>calcule la résolution en ppp puis en pixel/cm ;</li>
+                        <li>qui affiche la résolution en ppp puis en pixel/cm.</li>
+                    </ol>
+                   </p>
+
+                <h3>La profondeur de couleur</h3>
+                <p>Exercice 5 :
+                    Les 3 composantes RVB suffisent-elles à décrire la palette complète des couleurs visibles ?</p>
+                
+                <p>Exercice 6 : Combien peut-on coder de couleurs sur 2 bits ? sur 3 bits ? ... sur 8 bits ?</p>
+                
+
+               <p>Exercice 7 : Combien de couleurs peut on coder avec une profondeur de couleur de 24 bits ?</p> 
+                
+            
+                <p> Exercice 8 :
+                    Quels seraient les avantages et les inconvénients d’utiliser une profondeur de couleur plus
+                    importante ?</p>
+
+
+                <h3>La taille d’une image</h3>
+                <p>La taille de l’image correspond au nombre d’octets qu’occupe le fichier de l’image lors de son stockage.</p>
+            
+            
+                <p>Exercice 9 : 
+                    Comment peut-on calculer la taille de l’image si elle n’est pas compressée ?</p>
+            
+                <h2>Les métadonnées EXIF</h2>
+
+                <p>Une image numérique n’est pas qu’une liste de pixels. C’est aussi un fichier qui peut contenir des infor-
+                    mations diverses : les métadonnées EXIF (Exchangeable Image File Format).
+                    Un moyen simple de lire ces métadonnées est d’effectuer un clic droit sur l’image depuis l’explorateur de
+                    fichier et de sélectionner "propriétés".</p>
+
+                <p>Exercice 10 :
+                    Quels types d’informations renferment les métadonnées ?</p>
+                <p>Exercice 11 :                    Pourquoi les métadonnées peuvent-elles s’avérer... sensibles ?</p>
+            
+            </div>
+
+
+
+
+
+
+                </div>
+                <!--
+        <div class="row">
+            <div class="col-lg-4 col-md-4 col-xs-12">
+                 <a href="Exemples/SiteNSI/TP_NSI.html">TP</a>
+            </div>
+
+            <div class="col-lg-4 col-md-4 col-xs-12">
+                <a href="Exemples/bbb/index.html">Big Buck Bunny</a>
+            </div>
+            <div class="col-lg-4 col-md-4 col-xs-12">
+                <a href="Exemples/Exemple_frameworks/index.html">Exemple Frameworks</a>
+            </div>   
+            </div>
+
+            <hr>
+
+            <div class="row">
+                    <div class="col-lg-12 col-md-12 col-xs-12">
+                            <a href="index_site.html">Retour index</a>
+                        </div>   
+                        </div>
+                    -->
+
+
+                <!-- Optional JavaScript -->
+                <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+                <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+                    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+                    crossorigin="anonymous"></script>
+                <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+                    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+                    crossorigin="anonymous"></script>
+                <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+                    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+                    crossorigin="anonymous"></script>
+                <script src="prism.js"></script>
+            </div>
+</body>
+
+</html>

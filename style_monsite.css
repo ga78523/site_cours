@@ -1,0 +1,117 @@
+body{
+    background-image: url("img/blue-wallpaper-2680270.jpg");
+}
+
+.container{
+    max-width:800px;
+    background-color: white;
+    padding-bottom:70px;
+    padding-top:30px;
+    counter-reset: chapter ;
+    counter-reset:exo;
+}
+
+.Exercice{
+    counter-increment: exo;
+    
+}
+
+.Exercice:after {
+    content: counter(exo) " : ";
+     }
+
+.titre{
+margin:40px;
+}
+
+#operation {
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+  }
+
+#operation th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: center;
+    background-color: rgb(150, 150, 170);
+    color: white;
+  }
+ #operation td, #customers th {
+    border: 1px solid #ddd;
+    padding: 8px;
+  }
+
+#operation tr:hover {background-color: #ddd;}
+
+h1{
+    text-align: center; 
+    font-size:xx-large;
+ }
+
+ .btn btn-secondary dropdown-toggle{
+    background-color: gainsboro;  
+ }
+
+
+table{
+margin:auto;
+}
+td{
+    text-align:center;
+    width=600px;
+ }
+
+h2{
+    counter-increment: chapter;
+    counter-reset: subpart;
+    font-size:x-large ;
+}
+
+h3{
+counter-increment: subpart; 
+font-size: larger;
+}
+
+h2:before {
+content: counter(chapter) ". ";
+ }
+ 
+h3:before {
+content: counter(chapter) "." counter(subpart) ". ";
+ }
+p{
+text-align: justify;
+text-indent: 5%;
+
+}
+
+
+.correction{
+margin-top:50px;
+text-align:center;
+font-size :larger;
+color:red;
+}
+
+a{
+    color :blue;
+    margin:auto;
+    }
+
+#fondBleu{
+border-radius:10px;
+border:solid black;
+background-color: gainsboro;
+margin-top:20px;
+padding:auto;
+text-align: center;
+font-size:x-large;
+vertical-align:middle;
+
+}
+
+img{
+display:block;
+margin:auto;
+}

@@ -1,0 +1,344 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Page d’exemple>
+    <meta name=" keywords" content="HTML5, CSS3">
+    <meta name="author" content="Eric Galand">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <title>Exemple </title>
+    <link rel="stylesheet" media="screen" href="../../style_monsite.css">
+    <link href="../../prism.css" rel="stylesheet" />
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+
+            <div class="col-12">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="../../index_site.html">Accueil</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav mr-auto">
+                             
+
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    SNT
+                  </a>
+                  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="../accueil_internet.html">Internet</a>
+                    <a class="dropdown-item" href="../accueil_web.html">Web</a>
+                    <a class="dropdown-item" href="../accueil_donnees.html">Les données structurées et leur traitement</a>
+                    <a class="dropdown-item" href="../accueil_image.html">La photographie numérique</a>
+                    <a class="dropdown-item" href="../accueil_gps.html">Localisation, cartographie et mobilité</a>
+                    <a class="dropdown-item" href="../accueil_iot.html">Informatique embarquée</a>
+                    <a class="dropdown-item" href="../accueil_reseaux.html">Réseaux sociaux</a>
+                    <a class="dropdown-item" href="../accueil_python.html">Python</a>
+                    
+                  </div>
+                  
+                </li>
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      NSI
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <a class="dropdown-item" href="#"></a>
+                      <a class="dropdown-item" href="#">Another action</a>
+                      <div class="dropdown-divider"></div>
+                      <a class="dropdown-item" href="#">Something else here</a>
+                    </div>
+                    
+                  </li>
+
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                     Physique
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#"></a>
+                        <a class="dropdown-item" href="#">Cours Première></a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Cours Terminale</a>
+                      </div>
+                    
+                  </li>
+               
+              </ul>
+              
+            </div>
+          </nav>
+
+          </div>
+        </div>
+
+
+
+
+
+
+        <div class="row">
+            <div class="col-12">
+                <h1>L'image avec Python</h1>
+                <h1>Correction des exercices</h1>
+
+            <h2> Exercice 3 : niveaux de gris</h2>
+
+
+            <h3>Idée générale</h3>
+            <p>Tout d'abord, un mot sur l'idée générale du programme. Il faut :
+                <ul>
+                <li>importer une image dans le programme python ;</li> 
+                <li>balayer chaque pixel cette image ;</li>
+                <li>modifier chaque pixel de cette image ;</li>
+                <li>les mettre un à un dans une nouvelle image que l'on aura créée.</li>
+            </ul>
+            </p>
+
+
+
+            <h3>Protocole</h3>
+            <ul>
+            <li>Tout d'abord, créer un dossier <b>Traitement Image</b> et y
+                 enregistrer une image.Pour nous ici, dans cette correction, 
+                 cette image sera un iguane.
+             </li>
+             <li>Avec Edupython, créer un nouveau script appelé <b>Exercice3.py</b> que vous 
+                 enregistrerez dans votre dossier <b>Traitement Image</b>.</li>
+
+            <li>Chaque script/programme où on va modifier une image doit commencer 
+                par l'importation de la bibliothèque PIL car les fonctions dont on a besoin
+                 se trouvent dedans. Donc chaque programme de traitement d'image commence comme ceci :</p>
+                </li>
+                 <pre><code class="language-python">
+from PIL import Image,ImageDraw  
+</code></pre>
+
+            
+            <li>Ensuite, il faut charger une image (iguane.jpg) qui doit se trouver
+                 impérativement dans le même dossier que le programme python que vous écrivez.
+             Cette image doit être déclarée en tant que variable (ici <code>img</code>) pour que votre programme
+             python puisse la reconnaître et la manipuler.
+            </li>    
+
+                <pre><code class="language-python">
+img=Image.open("iguane.jpg")
+                    </code></pre>
+                    
+                    <p> Pour afficher l'image originale, on utilise l'instruction 
+                        <code>img.show()</code>.Le programme python devrait ressembler à ceci :</p>
+                    <pre><code class="language-python">
+from PIL import Image,ImageDraw  
+img=Image.open("iguane.jpg")                    
+img.show() 
+    </code></pre>
+                   <li>Ensuite, nous allons déclarer deux variables que sont <code>largeur</code>
+                    et <code>hauteur</code> qui sont respectivement la largeur et la hauteur de 
+                    l'image <code>img</code>. Nous créons aussi une image vide 
+                    que nous appellerons <code>imageNB</code> de largeur et de hauteur 
+                    identiques à celles de notre iguane. 
+                </li>
+                    <pre><code class="language-python">
+largeur=img.width
+hauteur=img.height
+imageNB=Image.new("RGB",(largeur,hauteur))
+                </code></pre>
+                <li> Maintenant, on va prendre les pixels un par un, on va regarder quelles
+                    sont leurs composantes RVB, faire une moyenne des trois G=(R+V+B)/3 
+                    et on réaffecte cette couleur G à un pixel dans la nouvelle image
+                     au même endroit que le pixel de l'image initiale. On remarquera que lorque les trois composantes RVB
+                     sont identiques, nous avons du gris. C'est ce que nous allons faire 
+                     dans l'exemple qui suit avec le pixel de coordonnées x=0 et y=0. Je rappelle 
+                     que ce pixel correspond au pixel du coin en haut à gauche. 
+                </li>
+                    
+                    <pre><code class="language-python">
+couleur=img.getpixel((0,0))
+R,V,B=couleur
+G=(R+V+B)//3
+imageNB.putpixel((0,0),(G,G,G))
+</code></pre>
+                <li>
+                 A ce stade, nous avons modifié juste un pixel de l'image. Pour mdifier 
+                 tous les pixels de la ligne y=0, il nous faut se déplacer à x=1 puis x=2
+                 jusque x=largeur. Nous pouvons le faire grâce à l'instruction for. Une fois 
+                 balayée la ligne, il faut recommencer pour la ligne y=1, y=2 jusque la ligne
+                 y=hauteur. Nous utiliserons encore une fois la boucle for. Ce qui donne le bout de 
+                 programme suivant : 
+                </li>
+                <pre><code class="language-python">
+for y in range (hauteur):
+    for x in range(largeur):
+        couleur=img.getpixel((x,y))
+        R,V,B=couleur
+        G=(R+V+B)//3
+        imageNB.putpixel((x,y),(G,G,G))                   
+                </code></pre>
+                <li>Il ne nous reste plus qu'à afficher l'image <code>imageNB</code> grâce à l'instruction 
+                    <code>imageNB.show()</code>
+                    <pre><code class="language-python">
+imageNB.show()
+                        </code></pre>
+
+                </li>
+                
+
+                </ul>
+                <h3>Script général</h3>
+                <pre><code class="language-python">
+from PIL import Image,ImageDraw
+
+img=Image.open("iguane.jpg")
+img.show()
+                    
+largeur=img.width
+hauteur=img.height
+                   
+imageNB=Image.new("RGB",(largeur,hauteur))
+for y in range (hauteur):
+    for x in range(largeur):
+        couleur=img.getpixel((x,y))
+        R,V,B=couleur
+        G=(R+V+B)//3
+        imageNB.putpixel((x,y),(G,G,G))
+imageNB.show()</code></pre>
+<table>
+    <tr>   
+   <td><img src="img/iguane.jpg" class="img-fluid" alt="desktop logo"></td>
+   <td><img src="img/iguaneNB.jpg" class="img-fluid" alt="desktop logo"></td> 
+   </tr>
+</table>
+
+<h2> Exercice 1 : décomposation en composantes RVB</h2>
+<p>Même structure exactement que l'exercice précédent </p>
+
+<pre><code class="language-python">
+from PIL import Image,ImageDraw
+
+img=Image.open("iguane.jpg")
+    
+largeur=img.width
+hauteur=img.height
+    
+    
+imageR=Image.new("RGB",(largeur,hauteur))
+imageV=Image.new("RGB",(largeur,hauteur))
+imageB=Image.new("RGB",(largeur,hauteur))
+    
+    
+for y in range (hauteur):
+    for x in range(largeur):
+        couleur=img.getpixel((x,y))
+        R,V,B=couleur
+        imageR.putpixel((x,y),(R,0,0))
+        imageV.putpixel((x,y),(0,V,0))
+        imageB.putpixel((x,y),(0,0,B))
+            
+            
+img.show()
+imageR.show()
+imageV.show()
+imageB.show()
+</code></pre>
+
+<table>
+ <tr>   
+<td><img src="img/iguane.jpg" class="img-fluid" alt="desktop logo"></td>
+<td><img src="img/iguaneR.jpg" class="img-fluid" alt="desktop logo"></td> 
+</tr>
+<tr>   
+    <td><img src="img/iguaneV.jpg" class="img-fluid" alt="desktop logo"></td>
+    <td><img src="img/iguaneB.jpg" class="img-fluid" alt="desktop logo"></td> 
+    </tr>
+</table>
+
+
+<h2> Exercice 4 : négatif</h2>
+<p>Même structure exactement que l'exercice précédent </p>
+
+<pre><code class="language-python">
+from PIL import Image,ImageDraw
+
+img=Image.open("iguane.jpg")
+img.show()
+    
+largeur=img.width
+hauteur=img.height
+    
+imageNegatif=Image.new("RGB",(largeur,hauteur))
+for y in range (hauteur):
+    for x in range(largeur):
+        couleur=img.getpixel((x,y))
+        R,V,B=couleur
+        imageNegatif.putpixel((x,y),(255-R, 255-V, 255-B))
+            
+imageNegatif.show()
+</code></pre>
+<table>
+    <tr>   
+   <td><img src="img/iguane.jpg" class="img-fluid" alt="desktop logo"></td>
+   <td><img src="img/iguaneNegatif.jpg" class="img-fluid" alt="desktop logo"></td> 
+   </tr>
+</table>
+
+<h2> Bonus : symétrie</h2>
+<p>Même structure exactement que l'exercice précédent </p>
+
+<pre><code class="language-python">
+from PIL import Image,ImageDraw
+img=Image.open("iguane.jpg")
+img.show()
+largeur=img.width
+hauteur=img.height
+
+    
+image2=Image.new("RGB",(largeur,hauteur))
+     
+for y in range (hauteur):
+    for x in range(largeur):
+        couleur=img.getpixel((x,y))
+        R,V,B=couleur
+        image2.putpixel((largeur-x-1,y),(R,V,B))
+            
+image2.show()
+    
+</code></pre>
+<table>
+    <tr>   
+   <td><img src="img/iguane.jpg" class="img-fluid" alt="desktop logo"></td>
+   <td><img src="img/imageSymetrie.jpg" class="img-fluid" alt="desktop logo"></td> 
+   </tr>
+</table>
+
+            </div>
+        </div> 
+    </div>
+              
+
+
+                <!-- Optional JavaScript -->
+                <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+                <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+                    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+                    crossorigin="anonymous"></script>
+                <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+                    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+                    crossorigin="anonymous"></script>
+                <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+                    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+                    crossorigin="anonymous"></script>
+                <script src="../../prism.js"></script>
+            </div>
+</body>
+
+</html>
