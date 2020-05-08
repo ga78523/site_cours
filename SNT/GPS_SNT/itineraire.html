@@ -1,0 +1,359 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="itinéraire>
+    <meta name=" keywords" content="HTML5, CSS3">
+    <meta name="author" content="Eric Galand">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <title>trame NMEA </title>
+    <link rel="stylesheet" media="screen" href="../../style_monsite.css">
+    <link href="../../prism.css" rel="stylesheet" />
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+
+            <div class="col-12">
+                <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                    <a class="navbar-brand" href="../../index_site.html">Accueil</a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse"
+                        data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav mr-auto">
+
+
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    SNT
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <a class="dropdown-item" href="../accueil_internet.html">Internet</a>
+                                    <a class="dropdown-item" href="../accueil_web.html">Web</a>
+                                    <a class="dropdown-item" href="../accueil_donnees.html">Les données structurées et
+                                        leur traitement</a>
+                                    <a class="dropdown-item" href="../accueil_image.html">La photographie numérique</a>
+                                    <a class="dropdown-item" href="../accueil_gps.html">Localisation, cartographie et
+                                        mobilité</a>
+                                    <a class="dropdown-item" href="../accueil_iot.html">Informatique embarquée</a>
+                                    <a class="dropdown-item" href="../accueil_reseaux.html">Réseaux sociaux</a>
+                                    <a class="dropdown-item" href="../accueil_python.html">Python</a>
+
+                                </div>
+
+                            </li>
+
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    NSI
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <a class="dropdown-item" href="#"></a>
+                                    <a class="dropdown-item" href="../../NSI/premiereNSI.html">Cours Première</a>
+                                    <div class="dropdown-divider"></div>
+                                    <a class="dropdown-item" href="../../NSI/terminaleSNI.html">Cours Terminale</a>
+                                </div>
+
+                            </li>
+
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    Physique
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <a class="dropdown-item" href="#">Action</a>
+                                    <a class="dropdown-item" href="#">Another action</a>
+                                    <div class="dropdown-divider"></div>
+                                    <a class="dropdown-item" href="#">Something else here</a>
+                                </div>
+
+                            </li>
+
+                        </ul>
+
+                    </div>
+                </nav>
+
+            </div>
+        </div>
+
+
+
+
+
+
+        <div class="row">
+            <div class="col-12">
+                <h1>Comment un ordinateur calcule-t-il le plus court
+                    chemin entre deux lieux ?
+                    
+                </h1>
+
+                <h2> Problématique </h2>
+<p>Un automobiliste souhaite aller de la ville de Loches (37600) à la ville de St-Savin (86310) en empruntant
+    le plus court chemin. Il aimerait connaître la distance entre ces 2 villes.
+    </p>
+
+
+
+<h2> Recherche d’un itinéraire à partir de géoportail</h2>
+
+<b>Faire</b>
+<ol>
+    <li>Lancer l’application Géoportail : <a href="https://www.geoportail.gouv.fr/">https://www.geoportail.gouv.fr/</a> </li>
+    <li>Rechercher Loches (37600)</li>
+
+    <img src="img/iti_geoportail.png" class="img-fluid" alt="Géoportail">
+
+    <li>Dans outils sélectionner "calculer un itinéraire" puis sélectionner les villes de départ (37600 Loches) et
+        d’arrivée (86310 Saint-Savin)  </li>
+    <li>Lancer le calcul.  </li>
+</ol>
+    <img src="img/iti_fondCarte.png" class="img-fluid" alt="Géoportail">
+    <ol start=5>
+    <li>" Afficher le détail " vous permet de suivre l’itinéraire.
+    </li>
+
+</ol>
+
+
+
+
+
+<h2>Comment un logiciel effectue-t-il un calcul d’itinéraire ?</h2>
+<h3> Représentation simplifiée de la carte sous forme de graphe</h3>
+
+<p>Pour trouver le plus court chemin sur une carte, on représente la carte sous une forme de graphe où
+    chaque carrefour est un sommet du graphe. Sur les arrêtes du graphe, on note la distance d’un carrefour à
+    l’autre.
+    </p>
+<table>
+    <tr>
+        <td>
+            <img src="img/iti_graphe.png" class="img-fluid" alt="Géoportail"> 
+        </td>
+        <td><img src="img/iti_graphe1.png" class="img-fluid" alt="Géoportail"> 
+          
+            Les points A, B, C...E annotés
+            sur le graphe sont indiqués sur la
+            carte (ne pas hésiter à zoomer).
+            
+        
+        </td>
+    </tr>
+</table>
+
+<b>Question</b>
+<ol>
+    <li>Sur le graphe ci-dessus, donner les distances manquantes BC, EF et GH.
+    </li>
+</ol>
+
+<h3>Principe du calcul : l’algorithme de Dijkstra</h3>
+<p>L’algorithme de Dijkstra est un algorithme qui, à partir du graphe, per-
+    met de résoudre le problème du plus court chemin entre 2 points bien déter-
+    minés. Afin de comprendre comment fonctionne cet algorithme, visionner la
+    vidéo suivante : <a href="https://youtu.be/rI-Rc7eF4iw">https://youtu.be/rI-Rc7eF4iw</a>
+    </p>
+
+
+    <img src="img/iti_video.png" class="img-fluid" alt="Dijkstra">
+
+ 
+    
+    <b>Question</b>
+    <ol start=2>
+        <li>Cet algorithme donne t-il uniquement le plus court chemin entre A et H ?
+        </li>
+    </ol>
+    
+    <h3> Application    </h3>
+    <b>Questions</b>
+    <ol start=3>
+        <li>  En utilisant l’algorithme de Dijkstra, calculer le plus court chemin entre Loches (point A) et Saint-Savin
+            (point K).</li>
+
+            <table id="operation">
+                <tr>
+                  <th>A</th>
+                  <th>B</th>
+                  <th>C</th>
+                  <th>D</th>
+                  <th>E</th>
+                  <th>F</th>
+                  <th>G</th>
+                  <th>H</th>
+                  <th>I</th>
+                  <th>J</th>
+                  <th>K</th>
+                  <th>Choix</th>
+                </tr>
+                <td> </td>
+                <td> </td>
+                <td> </td>
+                <td> </td>
+                <td> </td>
+                <td> </td>
+                <td> </td>
+                <td> </td>
+                <td> </td>
+                <td> </td>
+                <td> </td>
+                <td> </td>
+                
+                </tr>
+                
+            </tr>
+            <td> </td>
+            <td> </td>
+            <td> </td>
+            <td> </td>
+            <td> </td>
+            <td> </td>
+            <td> </td>
+            <td> </td>
+            <td> </td>
+            <td> </td>
+            <td> </td>
+            <td> </td>
+            
+            </tr>
+        </tr>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        </tr>
+    </tr>
+    <td> </td>
+    <td> </td>
+    <td> </td>
+    <td> </td>
+    <td> </td>
+    <td> </td>
+    <td> </td>
+    <td> </td>
+    <td> </td>
+    <td> </td>
+    <td> </td>
+    <td> </td>
+    </tr>
+</tr>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+</tr>
+</tr>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+</tr>
+</tr>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+</tr>
+</tr>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+</tr>
+</tr>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+</tr>
+              </table>
+
+
+        <li>Quelle est la distance Loches / Saint Savin ?   </li>
+        <li>Quelle est la distance Loches / Chatillon sur Indre ?
+        </li>
+
+    </ol>
+            </div>
+        </div>
+        <!-- MathJax -->
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+        <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+        <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+            crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+            integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+            crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+            integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+            crossorigin="anonymous"></script>
+        <script src="../../prism.js"></script>
+    </div>
+</body>
+
+</html>
