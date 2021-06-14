@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Cours HTML</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.10.2/p5.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.10.2/addons/p5.sound.min.js"></script>
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <meta charset="utf-8" />
+
+</head>
+
+<body>
+
+
+    <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">NSI</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">SNT</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Première NSI</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" >Terminale NSI</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <h1>Créer ses propres pages web </h1>
+        <h2>Introduction</h2>
+        <p> Nous consultons tous les jours des sites Web. Pour les sites les plus connus, on peuts’apercevoir que
+            l’affichage et les fonctionnalités sont identiques quel que soit le navigateur utilisé (ce n’est pas
+            toujours le cas pour des sites moins connus) à quelques détails près.</p>
+
+        <p> Les pages Web sont créées à l’aide de langages informatiques. Le respect des règles définiespour ces
+            langages permet de créer des pages WEB qui pourront être lues correctement quel que soit le navigateur.</p>
+
+        <p> Pour créer la page Web visualisée, ont été utilisés les langages HTML et CSS. Le langage HTML a été créé en
+            1991 par Tim Berners-Lee. Ce dernier a aussi créé le World Wide WebConsortium (W3C) qui définit les
+            nouvelles versions et les standards des langages liés au Web.
+        </p>
+
+
+        <h2>Créer ses propres pages web</h2>
+
+        <h3>HTML et éditeurs</h3>
+
+        Pour créer des pages Web, on peut utiliser:
+        <ul>
+            <li>Des logiciels WYSIWYG (What You See Is What You Get); ce sont des programmes(Mozilla Composer,
+                Dreamweaver et même les traitements de texte) qui permettent de créer des sites sans apprendre de
+                langage particulier. Les pages web sont générés automatiquement. Permettant une création plus rapide au
+                démarrage, ils présentent cependant l’inconvénient de modifications plus laborieuses (le codage n’est
+                pas optimisé,rendant toute modification problématique)
+            </li>
+            <li>Des éditeurs de texte, ce sont des programmes dédiés à l'écriture de code (pas seulement HTML ou CSS)
+                plus ou moins évolués (les fonctionnalités de certains facilitent l'écriture du code). Nous utiliserons
+                l'éditeur de texte Visual Studio Code Pour télécharger ce logiciel, il faut se rendre à l’adresse
+                suivante : <a href="https://code.visualstudio.com">https://code.visualstudio.com</a>
+            </li>
+        </ul>
+
+        <h3>Ma première page</h3>
+        <ul>
+            <li>Dans vos documents, créer un dossier nommé <i>monPremierSite</i>. Puis dans ce dossier, créer à nouveau
+                un
+                dossier nommé <i>img</i> pour les images.
+            </li>
+            <li>Ouvrir <i>Visual Studio Code</i> et créer un nouveau document. Pour cela, il faut cliquer sur File dans
+                la barre
+                d’outil puis <i>New File</i>>.
+            </li>
+            <li>Puis saisir le code suivant (ou bien faites un Copier/Coller à partir du TP ) :
+            </li>
+        </ul>
+
+        <p class="codepen" data-height="367" data-theme-id="dark" data-default-tab="html,result" data-user="ga78523"
+            data-slug-hash="wvJQqyv"
+            style="height: 367px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;"
+            data-pen-title="FirstPage">
+            <span>See the Pen <a href="https://codepen.io/ga78523/pen/wvJQqyv">
+                    FirstPage</a> by eric (<a href="https://codepen.io/ga78523">@ga78523</a>)
+                on <a href="https://codepen.io">CodePen</a>.</span>
+        </p>
+        <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+
+        <ul>
+            <li> Enregistrer votre fichier sous le dossier <i>monPremierSite</i> sous le nom de : pageWeb1.html. Bien
+                vérifier,
+                que l’extension de votre fichier est .html et non .txt
+                Sous <i>Visual Studio Code</i>, les balises apparaissent en bleu, les commentaires en vert et le texte
+                visible
+                par l’utilisateur en blanc. Si vous ne voyez pas cette coloration syntaxique, appeler le professeur.
+            </li>
+            <li>Une fois enregistré votre travail, ouvrir votre fichier pageWeb1.html avec un navigateur internet
+                (Firefox, Chrome, Explorer ...)
+            </li>
+            <li> Modifier le code précédent pour obtenir ceci:
+
+            </li>
+        </ul>
+        <img src="1PageModifiee.png" class="img-fluid" alt="page1">
+
+        <h3>Le langage HTML</h3>
+
+        <p>Le langage HTML (HyperText Markup Language) permet de concevoir des documents Web. Ce langage de
+            programmation descriptif est composé d'éléments. Un élément HTML est composé
+            d'une balise ouvrante et d'une balise fermante afin de délimiter la zone de texte concernée par l'élément en
+            question.
+        </p>
+
+
+        <p> Par exemple, l'élément p, que nous avons utilisé délimite un paragraphe de texte, a pour balise
+            ouvrante &lt;p&gt; et pour balise fermante &lt;/p&gt;.
+            Il y a également la balise &lt;!DOCTYPE html&gt;. Le doctype (pour Document Type Declaration) permet de
+            renseigner le navigateur Web sur la version de HTML utilisée par le document Web. Le doctype utilisé dans
+            l'exemple fait référence à HTML5. Un
+            fichier HTML est composé de deux parties.
+        </p>
+
+
+        <p> &lt;head&gt; et &lt;/head&gt; : les éléments contenus dans l'entête n'ont pas vocation
+            à être affichés sauf l'élément title dont le contenu apparaît dans l'onglet du navigateur Web. Les
+            informations contenues dans l'entête
+            renseignent sur l'auteur et le contenu du document.
+        </p>
+
+        <p>&lt;body&gt; et &lt;/body&gt;: l'ensemble des informations contenues entre ces balises sont
+            affichées dans la fenêtre du navigateur Web.
+        </p>
+
+        <h3>Structuration des documents</h3>
+
+        <p> Titre de section : les balises h1, h3, h3, h4, h5, h6 permettent de définir des titres de sections,
+            sous-sections, etc
+            jusqu’à six niveaux.
+        </p>
+
+
+        <p class="codepen" data-height="329" data-theme-id="dark" data-default-tab="html,result" data-user="ga78523"
+            data-slug-hash="BaWGdYB"
+            style="height: 329px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;"
+            data-pen-title="SecondPage">
+            <span>See the Pen <a href="https://codepen.io/ga78523/pen/BaWGdYB">
+                    SecondPage</a> by eric (<a href="https://codepen.io/ga78523">@ga78523</a>)
+                on <a href="https://codepen.io">CodePen</a>.</span>
+        </p>
+        <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+
+        <h3>Pour en savoir plus...</h3>
+        Pour connaître d’autres balises et d’autres attributs, consulter le site MDN.
+        
+        <h2>Le CSS (Cascading Style Sheets)</h2>
+
+        <h3>Introduction</h3>
+        <p>
+            Vous avez remarqué que si nous voulons donner une unité au site, il est nécessaire, pour chaque page, de
+            définir par exemple une police bleue.
+        </p>
+        <img src="css1.png" id="img_css1" class="img-fluid" alt="CSS" max-width="300">
+
+        <p>Or, nous pouvons aussi utiliser une page de style écrite dans un autre langage: le CSS. Le Langage CSS,
+            apparu
+            en 1996, est complémentaire du langage HTML et permet de gérer la mise en forme (l'apparence) des
+            différentes
+            pages d’un site Web (couleur du texte, police, taille du texte, bordures, fond...)
+        </p>
+        <p>
+            Ainsi, dans l’exemple précédent, il suffit de créer une page style.css (avec Visual StudioCode par exemple)
+            dans
+            laquelle il écrit que les paragraphes sont en bleu. Toutes les pages html créées appelleront
+            <i>style.css</i> dans
+            l’en-tête (head) de la page grâce à l’instruction :
+
+            &lt;link href="style.css" rel="stylesheet" type="text /css"&gt;
+        </p>
+
+        <img src="utiliteCSS.png" id="img_css1" class="img-fluid" alt="CSS">
+
+        <h3>Explications</h3>
+
+        <p>Ici, on indique que l’élément p (paragraphe) contient du texte aligné des deux côtés (justifié) et de couleur
+            bleue. On indique également que l’élément body (corps de la page HTML) aura un fond d’écran couleur
+            gainsboro
+            c’est-à-dire bleu très clair.</p>
+
+        <p>
+            En CSS:
+        <ul>
+            <li>Body et p sont nommés selecteur</li>
+            <li>color, text-align, background-color sont nommés propriétés CSS</li>
+            <li>gainsboro, blue, justify sont nommés valeurs </li>
+        </ul>
+        </p>
+
+        <h3>La notion de boite</h3>
+        <p>
+            Dans le modèle des feuilles de style, tous les éléments d’une page HTML se coulent dans des blocs (ou
+            «boites»)
+            rectangulaires. Un bloc typique est représenté ci-dessous :
+        </p>
+
+        <img src="boite.png" id="boite" class="img-fluid" alt="CSS">
+
+        <p>A partir de l’extérieur, on rencontre successivement 4 zones:
+        <ul>
+            <li> Une marge externe (margin), toujours transparente,
+                avec des épaisseurs réglables côté par côté ;
+            </li>
+            <li>
+                Une bordure (border) dont on peut régler l’épaisseur, la couleur et
+                le style côté par côté ;
+            </li>
+            <li>
+                Une marge interne (padding), ou «espacement», d’épaisseur réglable côté par
+                côté ;
+            </li>
+            <li>
+                L’espace dévolu au bloc Il existe en HTML deux catégories d’éléments textuels : les éléments block (les
+                éléments p, ul sont par défaut des éléments block) qui créent une boite et forcent un retour à la ligne
+                et
+                les éléments de type inline (les éléments a, b, i sont par défaut des éléments inline) qui placentleur
+                contenu dans le
+                flot du texte.
+            </li>
+
+        </ul>
+
+        Il est possible faire passer des éléments inline en éléments block(et inversement
+        à l’aide de la propriété display.
+
+
+        <h3>Quelques propriétés CSS</h3>
+
+        <p>De nombreuses propriétés CSS indiquent des longueurs (taille d’une bordure, d’un ajustement, taille des
+            polices). Leur valeur est toujours un nombre suivi d’une unité. Parmi les unités légales en CSS, on
+            retrouve notamment le pixel (px) et le point (pt). Nous donnons ci-dessous quelques propriétés CSS.
+        </p>
+
+
+        <table class="table table-bordered">
+            <thead class="thead-dark">
+                <tr>
+                    <th>Propriété</th>
+                    <th>Valeur</th>
+                    <th>Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>display</td>
+                    <td>None, block ou inline</td>
+                    <td>mode d’affichage de la boîte</td>
+                </tr>
+                <tr>
+                    <td>Background</td>
+                    <td>couleur</td>
+                    <td>couleur de fond de la boîte</td>
+                </tr>
+                <tr>
+                    <td>color</td>
+                    <td>couleur</td>
+                    <td>couleur de texte</td>
+                </tr>
+                <tr>
+                    <td>border</td>
+                    <td>taille motif couleur ou none</td>
+                    <td>Si none, la bordure est masquée. Sinon, on donne la taille, le motif (solid, dotted oudashed) et
+                        la couleur séparés par des espaces. </td>
+                </tr>
+                <tr>
+                    <td>margin</td>
+                    <td>longueur</td>
+                    <td>taille des marges </td>
+                </tr>
+
+                <tr>
+                    <td>padding</td>
+                    <td>longueur</td>
+                    <td>taille des ajustements</td>
+                </tr>
+                <tr>
+                    <td>text-decoration</td>
+                    <td>none, underline, overline, ouline-through</td>
+                    <td>décoration du texte</td>
+                </tr>
+                <tr>
+                    <td>text-align</td>
+                    <td>left, right, ou justify</td>
+                    <td>justification du texte</td>
+                </tr>
+                <tr>
+                    <td>font-family</td>
+                    <td>fixed, serif, ou sans serif</td>
+                    <td>justification du texte</td>
+                </tr>
+                <tr>
+                    <td>font-weight</td>
+                    <td>normal, light, bold, ou bolder</td>
+                    <td>graisse de la police</td>
+                </tr>
+                <tr>
+                    <td>font-style</td>
+                    <td>normal ou italic</td>
+                    <td>style de la police</td>
+                </tr>
+                <tr>
+                    <td>font-size</td>
+                    <td>Longueur ou xx-small, x-small,small, normal, large, x-large,xx-large</td>
+                    <td>taille de la police</td>
+                </tr>
+
+            </tbody>
+        </table>
+
+    </div>
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>
