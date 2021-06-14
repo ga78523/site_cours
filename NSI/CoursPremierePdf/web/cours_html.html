@@ -153,20 +153,24 @@
             <li> Titre de section : les balises h1, h3, h3, h4, h5, h6 permettent de définir des titres de sections,
                 sous-sections, etc jusqu’à six niveaux.
             </li>
-            <p class="codepen" data-height="329" data-theme-id="dark" data-default-tab="html,result" data-user="ga78523"
-                data-slug-hash="BaWGdYB"
-                style="height: 329px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;"
-                data-pen-title="SecondPage">
-                <span>See the Pen <a href="https://codepen.io/ga78523/pen/BaWGdYB">
-                        SecondPage</a> by eric (<a href="https://codepen.io/ga78523">@ga78523</a>)
-                    on <a href="https://codepen.io">CodePen</a>.</span>
-            </p>
-            <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+        </ul>
+        <p class="codepen" data-height="329" data-theme-id="dark" data-default-tab="html,result" data-user="ga78523"
+            data-slug-hash="BaWGdYB"
+            style="height: 329px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;"
+            data-pen-title="SecondPage">
+            <span>See the Pen <a href="https://codepen.io/ga78523/pen/BaWGdYB">
+                    SecondPage</a> by eric (<a href="https://codepen.io/ga78523">@ga78523</a>)
+                on <a href="https://codepen.io">CodePen</a>.</span>
+        </p>
+        <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+        <ul>
             <li>
                 Structuration du document. La balise &lt;p&gt; représente un paragraphe. Les espaces et les retours
                 à la lignes sont ignorés. Chaque nouvel élément p crée un nouveau paragraphe.
             </li>
-
+            <li>Dans la balise body, on peut placer l’attribut bgcolor="# 33CCFF".
+                Celui-ci permet de colorer le fond d’écran d’une certaine couleur (ici: le bleu clair).
+                Attention: la couleur est écrite en hexadécimal. Cela nous donne:</li>
 
         </ul>
 
@@ -174,6 +178,109 @@
         </p>
 
 
+        <p class="codepen" data-height="265" data-theme-id="dark" data-default-tab="html,result" data-user="ga78523"
+            data-slug-hash="bGqOGJO"
+            style="height: 265px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;"
+            data-pen-title="Hello World">
+            <span>See the Pen <a href="https://codepen.io/ga78523/pen/bGqOGJO">
+                    Hello World</a> by eric (<a href="https://codepen.io/ga78523">@ga78523</a>)
+                on <a href="https://codepen.io">CodePen</a>.</span>
+        </p>
+        <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+
+
+        <h3>Travail à faire</h3>
+        <ol>
+            <li>Rechercher sur internet et écrire ci-dessous, le code hexadécimal du:</li>
+            <ul>
+                <li>du blanc : ...........</li>
+                <li>du vert : ...........</li>
+                <li>du rouge : ...........</li>
+                <li>du jaune: ...........</li>
+                <li>du magenta : .........</li>
+                <li>du cyan : ..........</li>
+                <li>du gris foncé : ......</li>
+            </ul>
+            <li>Réaliser une page internet qui se nommera
+                <i>pageWeb2</i> et qui ressemble à celle ci-dessous avec :
+                <ul>
+                    <li> un titre ; </li>
+                    <li>deux paragraphes écrits séparé par un ligne ;</li>
+                    <li>un fond d’écran de couleur gris ;</li>
+                    <li>un mot mis en évidence.</li>
+                </ul>
+            </li>
+        </ol>
+
+        <p>Remarque: pour créer un paragraphe imaginaire, vous pouvez
+            utiliser le site <a href="http://fr.lipsum.com/"> Lorem ipsum</a>. En effet, on sait depuis longtemps que
+            travailler avec du texte lisiblee t
+            contenant du sens est source de distractions, et empêche de se concentrer sur la mise en page elle-même.
+        </p>
+
+
+        <h3>Les images</h3>
+
+        <p>On peut insérer une image (au format png, jpeg ou gif) qui se trouve sans le dossier <i>img</i> du dossier
+            <i>monPremierSite</i> grâce à la balise &lt;img &gt; . Donc pour insérer une image (smiley.gif préalablement
+            enregistrée dans le dossier <i>img</i>), on peut procéder de la manière suivante :
+            &lt; img src="Img/smiley.gif" alt="Smiley face" width="42" height="42" &gt;
+        </p>
+
+        <p>Détaillons cette ligne:
+        <ul>
+            <li> src="smiley.gif" donne le nom de la photo à afficher (smiley.gif). Cet
+                attribut est obligatoire.</li>
+            <li> alt="Smiley face" spécifie un texte alternatif si l’image ne s’affiche pas (Smiley
+                face). Cet attribut est recommandé.</li>
+        </ul>
+
+
+        </p>
+
+        <h3>Les liens</h3>
+        <p> HTML (Hyper Text Markup Language) est un langage hypertexte, cela signifie qu'il vous permet en cliquant sur
+            un
+            mot, généralement souligné (ou une image) de vous rendre :
+        <ul>
+            <li>sur un autre endroit de la page ;</li>
+            <li>sur un autre fichier HTML situé sur votre ordinateur.</li>
+            <li>sur un autre ordinateur en réseau, y compris sur le Web.</li>
+        </ul>
+        </p>
+
+        <p>Pour écrire un lien sur une page web, il faut adopter la syntaxe suivante:
+
+            &lt; a href="lien"&gt; texte &lt;\a&gt; avec:
+        <ul>
+            <li>texte: texte qui apparaît en bleu souligné dans la page</li>
+            <li>lien: adresse d’un site site (Exemple : https://fr.wikipedia.org/wiki/Informatique) , d’une
+                autre page html
+                située dans notre dossier monPremierSite (exemple: pageWeb3.html à créerultérieurement) ou
+                bien un mot dans la page web concernée. Exemple: voir code et résultat précédents</li>
+        </ul>
+        </p>
+
+        <h3>Travail à faire</h3>
+        Réaliser deux pages internet qui ont chacune :
+        <ul>
+            <li>Un titre ; </li>
+            <li>Deux paragraphes ;</li>
+            <li>Une image de 300 pixels de largeurs
+                entre les deux paragraphes et la même image àla fin ;</li>
+            <li>Un fond d’écran de couleur ;</li>
+            <li>Un lien pour l’autre page et un
+                lien vers un fichier existant.</li>
+        </ul>
+
+        <h3>Les listes</h3>
+        <p>On peut organiser le texte en liste. Une liste énumérée est contenue dans un élément ol (abréviation de
+            l’anglais ordered list). Une liste non-énumérée est contenue dans un élément ul (abréviation de l’anglais
+            unordered list). Quelque soit le type de liste, chaque entrée de liste est contenue dans un élément li. Les
+            listes peuvent évidemment être imbriquées
+        </p>
+
+        <img src="travailFaire.png" id="travail" class="img-fluid" alt="travail">
 
         <h3>Pour en savoir plus...</h3>
         Pour connaître d’autres balises et d’autres attributs, consulter le site MDN.
@@ -182,19 +289,22 @@
 
         <h3>Introduction</h3>
         <p>
-            Vous avez remarqué que si nous voulons donner une unité au site, il est nécessaire, pour chaque page, de
+            Vous avez remarqué que si nous voulons donner une unité au site, il est nécessaire, pour chaque
+            page, de
             définir par exemple une police bleue.
         </p>
         <img src="css1.png" id="img_css1" class="img-fluid" alt="CSS" max-width="300">
 
-        <p>Or, nous pouvons aussi utiliser une page de style écrite dans un autre langage: le CSS. Le Langage CSS,
+        <p>Or, nous pouvons aussi utiliser une page de style écrite dans un autre langage: le CSS. Le Langage
+            CSS,
             apparu
             en 1996, est complémentaire du langage HTML et permet de gérer la mise en forme (l'apparence) des
             différentes
             pages d’un site Web (couleur du texte, police, taille du texte, bordures, fond...)
         </p>
         <p>
-            Ainsi, dans l’exemple précédent, il suffit de créer une page style.css (avec Visual StudioCode par exemple)
+            Ainsi, dans l’exemple précédent, il suffit de créer une page style.css (avec Visual StudioCode par
+            exemple)
             dans
             laquelle il écrit que les paragraphes sont en bleu. Toutes les pages html créées appelleront
             <i>style.css</i> dans
@@ -207,7 +317,8 @@
 
         <h3>Explications</h3>
 
-        <p>Ici, on indique que l’élément p (paragraphe) contient du texte aligné des deux côtés (justifié) et de couleur
+        <p>Ici, on indique que l’élément p (paragraphe) contient du texte aligné des deux côtés (justifié) et de
+            couleur
             bleue. On indique également que l’élément body (corps de la page HTML) aura un fond d’écran couleur
             gainsboro
             c’est-à-dire bleu très clair.</p>
@@ -223,7 +334,8 @@
 
         <h3>La notion de boite</h3>
         <p>
-            Dans le modèle des feuilles de style, tous les éléments d’une page HTML se coulent dans des blocs (ou
+            Dans le modèle des feuilles de style, tous les éléments d’une page HTML se coulent dans des blocs
+            (ou
             «boites»)
             rectangulaires. Un bloc typique est représenté ci-dessous :
         </p>
@@ -244,10 +356,13 @@
                 côté ;
             </li>
             <li>
-                L’espace dévolu au bloc Il existe en HTML deux catégories d’éléments textuels : les éléments block (les
-                éléments p, ul sont par défaut des éléments block) qui créent une boite et forcent un retour à la ligne
+                L’espace dévolu au bloc Il existe en HTML deux catégories d’éléments textuels : les éléments
+                block (les
+                éléments p, ul sont par défaut des éléments block) qui créent une boite et forcent un retour à
+                la ligne
                 et
-                les éléments de type inline (les éléments a, b, i sont par défaut des éléments inline) qui placentleur
+                les éléments de type inline (les éléments a, b, i sont par défaut des éléments inline) qui
+                placentleur
                 contenu dans le
                 flot du texte.
             </li>
@@ -260,7 +375,8 @@
 
         <h3>Quelques propriétés CSS</h3>
 
-        <p>De nombreuses propriétés CSS indiquent des longueurs (taille d’une bordure, d’un ajustement, taille des
+        <p>De nombreuses propriétés CSS indiquent des longueurs (taille d’une bordure, d’un ajustement, taille
+            des
             polices). Leur valeur est toujours un nombre suivi d’une unité. Parmi les unités légales en CSS, on
             retrouve notamment le pixel (px) et le point (pt). Nous donnons ci-dessous quelques propriétés CSS.
         </p>
@@ -293,7 +409,8 @@
                 <tr>
                     <td>border</td>
                     <td>taille motif couleur ou none</td>
-                    <td>Si none, la bordure est masquée. Sinon, on donne la taille, le motif (solid, dotted oudashed) et
+                    <td>Si none, la bordure est masquée. Sinon, on donne la taille, le motif (solid, dotted
+                        oudashed) et
                         la couleur séparés par des espaces. </td>
                 </tr>
                 <tr>
@@ -341,6 +458,47 @@
             </tbody>
         </table>
 
+
+        <h3>Les balises div et span et les class</h3>
+        <p>Les éléments div sont des balises de type bloc tandis que les éléments span sont des balises de types inline.
+            Elles sont surtout utiles pour "déconnecter" certains morceaux de paragraphe ou plusieurs paragraphes de
+            cette logique d'écriture avec des feuilles de style. Elles créent ainsi des petits blocs particuliers dans
+            le document sans devoir repasser par les éléments structurels du Html classique. Les attributs class et id
+            sont des attributs universels ce qui signifie qu’on va pouvoir les utiliser avecn’importe quel élément HTML,
+            et notamment avec les éléments div et span.En pratique, il va être très courant de préciser des attributs
+            class et id pour nos éléments div et span pour pouvoir appliquer des styles à un div (ou span) ou à un
+            groupe
+            d’éléments div ou span) définis.</p>
+
+        <p class="codepen" data-height="265" data-theme-id="dark" data-default-tab="css,result" data-user="ga78523"
+            data-slug-hash="qBrLdRg"
+            style="height: 265px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;"
+            data-pen-title="qBrLdRg">
+            <span>See the Pen <a href="https://codepen.io/ga78523/pen/qBrLdRg">
+                    qBrLdRg</a> by eric (<a href="https://codepen.io/ga78523">@ga78523</a>)
+                on <a href="https://codepen.io">CodePen</a>.</span>
+        </p>
+        <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+
+        <h3>Les tableaux</h3>
+        <p>On peut enfin organiser du texte dans des tableaux au moyen de l’élément table, qui contient l’ensemble des
+            lignes du tableau, chacune d’elle consistant en un élément tr (abréviation del’anglais table row). Enfin
+            chaque ligne décrit les cases qu’elle contient au moyen de l’élément td.
+        </p>
+        <p class="codepen" data-height="265" data-theme-id="dark" data-default-tab="html,result" data-user="ga78523"
+            data-slug-hash="eYvbNGr"
+            style="height: 265px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;"
+            data-pen-title="eYvbNGr">
+            <span>See the Pen <a href="https://codepen.io/ga78523/pen/eYvbNGr">
+                    eYvbNGr</a> by eric (<a href="https://codepen.io/ga78523">@ga78523</a>)
+                on <a href="https://codepen.io">CodePen</a>.</span>
+        </p>
+        <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+
+        <h3>Pour en savoir plus...</h3>
+        <p>Vous pouvez aller sur le site W3S où il existe un validateur HTML5 et sur le site de Pierre Giraud
+            (https://www.pierre-giraud.com/html-css-apprendre-coder-cours/introduction/ ). 
+        </p>
     </div>
     <!-- JavaScript Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
