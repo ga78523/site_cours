@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Cours Recursivite</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.10.2/p5.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.10.2/addons/p5.sound.min.js"></script>
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link href="https://{{cdn}}/prism@v1.x/themes/prism.css" rel="stylesheet" />
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <meta charset="utf-8" />
+
+</head>
+
+<body>
+
+
+    <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">NSI</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="../../../index_site.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../../../SNT/accueil_SNT.html">SNT</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../../premiereNSI.html">Première NSI</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../../terminaleNSI.html">Terminale NSI</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <h1> Récursivité </h1>
+        <h2>Contexte : la somme des premiers entiers</h2>
+        <p>Pour définir la somme des <i>n</i> premiers entiers, on a l’habitude de d’écrire la formule suivante :
+            $$0+1+2+3+....+n$$
+        </p>
+        <p>Cette formulation peut nous apparaître simple et intuitive.</p>
+
+        <p class="exo"><b>Exercice 1 :</b> Écrire une fonction somme(n) qui retourne la somme des <i>n</i> premiers entiers.</p>
+        <p>Or ce code n’est pas directement lié à la formule précédente. En effet, il n’y a rien dans cette formule qui
+            laisse penser qu’il faille une variable intermédiaire pour calculer cette somme.
+        </p>
+        <p>
+            C’est pourquoi, nous allons tenter de définir autrement cette fonction :
+        </p>
+
+        $$ somme(n)= \left \{
+        \begin{array}{l l l}
+        0 & si &n=0 \\
+        n+somme(n-1) & si & n>0
+        \end{array}
+        \right . $$
+
+        <p>Cette définition nous indique ce que vaut <code>somme(n)</code> pour un entier <code>n</code> quelconque,
+            selon que <code>n</code> soit égal à 0 ou strictement positif. Ainsi, pour, pour le cas où n = 0, la valeur
+            de
+            <code>somme(n)</code> vaut 0, et dans le cas où <code>n</code> est strictement positif, la valeur de
+            <code>somme(n)</code> est n + somme(n − 1).
+        </p>
+        <p>Par exemple, voici ci-dessous les valeurs de <code>somme(n)</code> , pour <i>n</i> valant 0, 1, 2 et 3.</p>
+
+        $$
+        \begin{array}{l }
+        somme(0)=0 \\
+        somme(1)=1+somme(0)=1+0=1 \\
+        somme(2)=2+somme(1)=2+1=3
+        \end{array}
+        $$
+
+        <P>L’intérêt de cette formulation est qu’elle est directement programmable. En python,
+            cela donne le programme suivant :
+        </p>
+
+        <iframe src="https://trinket.io/embed/python3/580ce109d0" width="100%" height="356" frameborder="0"
+            marginwidth="0" marginheight="0" allowfullscreen></iframe>
+
+        <h2>Récursivité</h2>
+        <h3>Définition</h3>
+        <p>On dit qu’un sous-programme (procédure ou fonction) est récursif lorsqu'il s’appelle lui-même.
+            Il est indispensable de prévoir une condition d’arrêt à la récursion sinon la fonction va s’appeler une
+            infinité de fois. Dans la pratique, la pile qui stocke les appels récursifs est de taille finie. Une fois
+            qu’elle est pleine, le programme ne répondra plus.
+        </p>
+        <p class="exo"><b>Exercice 2 :</b>
+            Donner une définition récursive qui correspond au calcul de la fonction factorielle n! définie par \( n! =
+            1\times2\times 3\times...\times n \)
+            si \(n > 0\) et \(0! = 1 \). Écrire également le code d’une fonction \(fact(n) \) qui implémente cette
+            définition.
+            Pour les plus rapides, écrire la version itérative.</p>
+
+    </div>
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+        crossorigin="anonymous"></script>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script src="https://{{cdn}}/prism@v1.x/components/prism-core.min.js"></script>
+    <script src="https://{{cdn}}/prism@v1.x/plugins/autoloader/prism-autoloader.min.js"></script>
+</body>
+
+</html>
