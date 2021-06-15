@@ -26,7 +26,7 @@ max-width: 50%;
 }
 
 .container{
-    max-width:70%;
+    max-width:900px;
     background-color : white;
     margin-left: auto;
     margin-right: auto;
