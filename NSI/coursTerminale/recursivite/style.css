@@ -19,10 +19,32 @@ max-width: 50%;
 #boite{
     max-width: 50%;
 }
+#capture1{
+    max-width: 50%;
+}
 
+#capture2{
+    max-width: 45%;
+}
+#capture3{
+    max-width: 35%;
+}
+#capture4{
+    max-width: 20%;
+}
+#capture5{
+    max-width: 70%;
+}
 
 #travail{
     max-width: 50%;
+}
+
+#koch1{
+    max-width: 15%;
+}
+#koch2{
+    max-width:25%;
 }
 
 .container{
@@ -79,13 +101,15 @@ max-width: 50%;
         margin-bottom: 10%;
     }
 
-    p.exo{
-        color: green
-        ;
+   
+    p.exo,ol,li{
+        color: green;
     }
+
     .exo{
-        color: green
-        ;
+        color: green;
+        border-left:solid green; 
+        padding-left :10px;
     }
     pre.algo{
         border-top: solid black 1px;

@@ -51,8 +51,12 @@
         </p>
         <p>Cette formulation peut nous apparaître simple et intuitive.</p>
 
-        <p class="exo"><b>Exercice 1 :</b> Écrire une fonction somme(n) qui retourne la somme des <i>n</i> premiers
-            entiers.</p>
+        <div class="exo">
+            <p><b>Exercice 1 :</b> Écrire une fonction somme(n) qui retourne la somme des <i>n</i> premiers
+                entiers.</p>
+        </div>
+
+
         <p>Or ce code n’est pas directement lié à la formule précédente. En effet, il n’y a rien dans cette formule qui
             laisse penser qu’il faille une variable intermédiaire pour calculer cette somme.
         </p>
@@ -97,29 +101,40 @@
             infinité de fois. Dans la pratique, la pile qui stocke les appels récursifs est de taille finie. Une fois
             qu’elle est pleine, le programme ne répondra plus.
         </p>
-        <p class="exo"><b>Exercice 2 :</b>
-            Donner une définition récursive qui correspond au calcul de la fonction factorielle n! définie par \( n! =
-            1\times2\times 3\times...\times n \)
-            si \(n > 0\) et \(0! = 1 \). Écrire également le code d’une fonction \(fact(n) \) qui implémente cette
-            définition.
-            Pour les plus rapides, écrire la version itérative.</p>
+        <div class="exo">
+            <p><b>Exercice 2 :</b>
+                Donner une définition récursive qui correspond au calcul de la fonction factorielle n! définie par \( n!
+                =
+                1\times2\times 3\times...\times n \)
+                si \(n > 0\) et \(0! = 1 \). Écrire également le code d’une fonction \(fact(n) \) qui implémente cette
+                définition.
+                Pour les plus rapides, écrire la version itérative.</p>
+        </div>
 
-        <p class="exo"><b>Exercice 3 :</b>
-            Écrire une fonction récursive <code>boucle(i,k)</code> qui affiche les entiers entre <code>i</code> et
-            <code>k</code>. Par exemple,
-            <code>boucle(0,3)</code> affiche 0, 1, 2, 3.
-            Pour les plus rapides, écrire la version itérative.
-        </p>
+        <div class="exo">
+            <p><b>Exercice 3 :</b>
+                Écrire une fonction récursive <code>boucle(i,k)</code> qui affiche les entiers entre <code>i</code> et
+                <code>k</code>. Par exemple,
+                <code>boucle(0,3)</code> affiche 0, 1, 2, 3.
+                Pour les plus rapides, écrire la version itérative.
+            </p>
+        </div>
 
-        <p class="exo"><b>Exercice 4 :</b>
-            La méthode du paysan russe est un très vieil algorithme de multiplication de deux nombres entiers déjà
-            décrit, sous forme légèrement différente, sur un papyrus égyptien rédigé autour de 1650 avant J.-C. Il
-            s’agissait de la principale méthode de calcul en Europe avant l’introduction des chiffres arabes.</p>
-        <p class="exo">
-            Les ordinateurs l’ont utilisé avant que la multiplication ne soit directement intégré dans le processeur
-            sous forme de circuit électronique. Sous une forme moderne, il peut être décrit par le programme suivant</p>
 
-        <pre class="algo">
+
+        <div class="exo">
+            <p><b>Exercice 4 :</b>
+                La méthode du paysan russe est un très vieil algorithme de multiplication de deux nombres entiers déjà
+                décrit, sous forme légèrement différente, sur un papyrus égyptien rédigé autour de 1650 avant J.-C. Il
+                s’agissait de la principale méthode de calcul en Europe avant l’introduction des chiffres arabes.</p>
+            <p>
+                Les ordinateurs l’ont utilisé avant que la multiplication ne soit directement intégré dans le processeur
+                sous forme de circuit électronique. Sous une forme moderne, il peut être décrit par le programme suivant
+            </p>
+
+
+
+            <pre class="algo">
             <code>
 Fonction multiplication(x,y):
     p=0
@@ -131,43 +146,286 @@ Fonction multiplication(x,y):
         </code>
         </pre>
 
-        <p class="exo"> 
-           
-           <ol><li>Appliquer cette fonction pour effectuer la multiplication de 105 par 253. Détailler les étapes
-            dans le tableau suivant :</li></ol> 
-     
+            <p>
+
+            <ol>
+                <li>Appliquer cette fonction pour effectuer la multiplication de 105 par 253. Détailler les étapes
+                    dans le tableau suivant :</li>
+
+
+
+                <style type="text/css">
+                    .tg {
+                        border-collapse: collapse;
+                        border-spacing: 0;
+                        margin: auto
+                    }
+
+                    .tg td {
+                        border-color: black;
+                        border-style: solid;
+                        border-width: 1px;
+                        font-family: Arial, sans-serif;
+                        font-size: 14px;
+                        overflow: hidden;
+                        padding: 10px 5px;
+                        word-break: normal;
+                    }
+
+                    .tg th {
+                        border-color: black;
+                        border-style: solid;
+                        border-width: 1px;
+                        font-family: Arial, sans-serif;
+                        font-size: 14px;
+                        font-weight: normal;
+                        overflow: hidden;
+                        padding: 10px 5px;
+                        word-break: normal;
+                        width: 30px
+                    }
+
+                    .tg .tg-baqh {
+                        text-align: center;
+                        vertical-align: top
+                    }
+
+                    .tg .tg-amwm {
+                        font-weight: bold;
+                        text-align: center;
+                        vertical-align: top
+                    }
+                </style>
+                <table class="tg">
+                    <thead>
+                        <tr>
+                            <th class="tg-amwm">x</th>
+                            <th class="tg-amwm">y</th>
+                            <th class="tg-amwm">p</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="tg-baqh">105</td>
+                            <td class="tg-baqh">253</td>
+                            <td class="tg-baqh">...</td>
+                        </tr>
+                        <tr>
+                            <td class="tg-baqh">...</td>
+                            <td class="tg-baqh">...</td>
+                            <td class="tg-baqh">...</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <li>On admet que cet algorithme repose sur les relations suivantes. Proposer une version récursive de
+                    cet
+                    algorithme.</li>
+                $$
+                x*y= \left \{
+                \begin{array}{l l l}
+                0 & si &x=0 \\
+                (x//2)*(y+y) & si & x\ est\ pair\\
+                (x//2)*(y+y)+y & si & x\ est\ impair\\
+                \end{array}
+                \right .
+                $$
+
+            </ol>
+            </p>
+        </div>
+
+        <h3>Fonctionnement d'une fonction récursive</h3>
+        <p>Par exemple, l'évaluation de l'appel à <code>somme(3)</code> peut se
+            représenter de la manière suivante :</p>
+
+        <img id="capture1" src="img/Capture d’écran 2021-06-15 à 21.06.03.png" class="img-fluid" alt="capture1">
+        <p>où on indique uniquement pour chaque appel à somme(n) l’instruction qui est exécutée après le test n==0 de la
+            conditionnelle. Cette manière de représenter l’exécution d’un programme en indiquant les différents appels
+            effectués est appelée un arbre d’appels</p>
+
+        <p>Ainsi, pour calculer la valeur renvoyée par <code>somme(3)</code>, il faut tout d'abord appeler
+            <code>somme(2)</code>. Cet appel va lui-même déclencher un appel à <code>somme(1)</code>,
+            qui à son tour nécessite un appel à <code>somme(0)</code>. Ce dernier appel se termine en renvoyant
+            la valeur 0. Le calcul de <code>somme(3)</code> se fait donc "à rebours". Une fois que l'appel à
+            <code>somme(0)</code> est terminé, c'est-à-dire que la valeur 0 a été renvoyée, l'arbre d'appels a
+            la forme suivante.
         </p>
 
-        <style type="text/css">
-            .tg  {border-collapse:collapse;border-spacing:0;margin:auto}
-            .tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
-              overflow:hidden;padding:10px 5px;word-break:normal;}
-            .tg th{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
-              font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;width:30px}
-            .tg .tg-baqh{text-align:center;vertical-align:top}
-            .tg .tg-amwm{font-weight:bold;text-align:center;vertical-align:top}
-            </style>
-            <table class="tg">
-            <thead>
-              <tr>
-                <th class="tg-amwm">x</th>
-                <th class="tg-amwm">y</th>
-                <th class="tg-amwm">p</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td class="tg-baqh">105</td>
-                <td class="tg-baqh">253</td>
-                <td class="tg-baqh">...</td>
-              </tr>
-              <tr>
-                <td class="tg-baqh">...</td>
-                <td class="tg-baqh">...</td>
-                <td class="tg-baqh">...</td>
-              </tr>
-            </tbody>
-            </table>
+
+        <img id="capture2" src="img/Capture d’écran 2021-06-15 à 21.06.11.png" class="img-fluid" alt="capture2">
+
+        <p>A cet instant, l’appel à somme(1) peut alors se terminer et renvoyer le résultat de la somme 1+0. L’arbre
+            d’appels est alors le suivant :</p>
+
+        <img id="capture3" src="img/Capture d’écran 2021-06-15 à 21.06.17.png" class="img-fluid" alt="capture3">
+
+        <p>On obtient bien au final la valeur 6 attendue.</p>
+        <img id="capture4" src="img/Capture d’écran 2021-06-15 à 21.06.22.png" class="img-fluid" alt="capture4">
+        <p><b>Autre Représentation :</b> sous forme de pile d’exécution</p>
+        <img id="capture5" src="img/Capture d’écran 2021-06-15 à 21.06.29.png" class="img-fluid" alt="capture5">
+
+
+
+        <h3>Récursivité ou itérativité</h3>
+        <p>Lorsque l'on programme des fonctions qui ne s'appellent pas, on dit que l'on programme de manière itérative.
+            Il est toujours possible de transformer une fonction itérative en fonction récursive et vice et versa.
+            La méthode itérative nous est plus familière et est plus rapide une fois le code implémenté dans un langage
+            de programmation.</p>
+        <p>La méthode récursive est plus élégante et lisible et évite d'utiliser de nombreuses structures itératives.
+            Elle est également très utile pour concevoir des structures de données complexes comme les listes, les
+            arbres et les graphes. L'inconvénient le plus important de cette méthode, est qu'une fois implémentée dans
+            un langage de programmation, elle est très gourmande en ressource mémoire. Du fait que l'on empile, tous les
+            appels récursifs, des débordements de capacité peuvent se produire lorsque la pile est pleine.</p>
+
+        <h3>Récursivité croisée</h3>
+        <p>Dans cette méthode récursive, il arrive qu'une fonction appelle une autre fonction qui appelle elle-même la
+            première, ce cas est appelée récursivité croisée. Prenons, par exemple deux fonctions ci-dessous permettant
+            de tester si un nombre est pair ou impair comme dans le programme suivant.
+        </p>
+
+        <iframe src="https://trinket.io/embed/python3/e20dc39f41" width="100%" height="356" frameborder="0"
+            marginwidth="0" marginheight="0" allowfullscreen></iframe>
+        <p>Ce n'est évidemment pas la méthode la plus simple mais elle fonctionne. On aurait pu par exemple tester le
+            reste de la division euclidienne de n par deux.</p>
+
+        <h3>Récursivité multiple</h3>
+        <p>Il existe un autre cas particulier où la fonction s'appelle plusieurs fois. On parle alors de récursivité
+            multiple. C'est le cas par exemple dans le cas du calcul des coefficients binomiaux. On peut donner une
+            rappel mathématique de ces coefficients binomiaux qui sont caractérisés par la définition suivante pour
+            toute valeur entière de \(n\) et \(k\) telles que \(0\leq k\leq n \): </p>
+        $$
+        \begin{pmatrix}
+        n \\
+        k
+        \end{pmatrix}= \left \{
+        \begin{array}{l l l}
+        1 & si &k=0 \\
+        1 & si & k=n\\
+        \begin{pmatrix}
+        n-1 \\
+        k-1
+        \end{pmatrix}+\begin{pmatrix}
+        n-1 \\
+        k
+        \end{pmatrix}& sinon
+        \end{array}
+        \right .
+        $$
+        <p>Alors on peut donner la fonction algorithmique du programme</p>
+
+
+        <iframe src="https://trinket.io/embed/python3/7996ac56cb" width="100%" height="356" frameborder="0"
+            marginwidth="0" marginheight="0" allowfullscreen></iframe>
+
+        <div class="exo">
+            <p> <b>Exercice 5 :</b> La suite de Fibonacci est une suite d’entiers. Elle doit son nom à Leonardo
+                Fibonacci, dit
+                Leonardo Pisano, un
+                mathématicien italien du XIIIe siècle qui, dans un problème récréatif posé dans un de ses ouvrages, le
+                Liber
+                Abaci, décrit la croissance d’une population de lapins :
+            </p>
+            <p>« Un homme met un couple de lapins dans un lieu isolé de tous les côtés par un mur. Combien de
+                couples
+                obtient-on en un an si chaque couple engendre tous les mois un nouveau couple à compter du troisième
+                mois de
+                son existence ? »</p>
+            <p>Ce problème est à l’origine de la suite dont le nième terme correspond au nombre de paires de
+                lapins au nième
+                mois. Dans cette population (idéale), on suppose que :
+            <ul>
+                <li>au (début du) premier mois, il y a juste une paire de lapereaux ;</li>
+                <li>les lapereaux ne procréent qu’à partir du (début du) troisième mois ;</li>
+                <li>chaque (début de) mois, toute paire susceptible de procréer engendre effectivement une nouvelle
+                    paire de
+                    lapereaux ;</li>
+                <li>les lapins ne meurent jamais (donc la suite de Fibonacci est strictement croissante). La suite de
+                    Fibonacci est une suite d’entiers.
+                </li>
+            </ul>
+            </p>
+            <p>Notons le nombre de couples de lapins au début du mois . Jusqu'à la fin du deuxième mois, la
+                population se
+                limite à un couple (ce qu'on note : \(F_1=F_2=1\)). Dès le début du troisième mois, le couple de lapins
+                a
+                deux
+                mois et il engendre un autre couple de lapins. On note alors \(F_3=2\). Plaçons-nous maintenant au mois
+                <i>n</i> et
+                cherchons à exprimer ce qu'il en sera deux mois plus tard \(n+2\) : \(F_{n+2}\) désigne la somme des
+                couples
+                de
+                lapins au mois et des couples nouvellement engendrés. Or, n'engendrent au mois \(n+2\) que les couples
+                pubères, c'est-à-dire ceux qui existent deux mois auparavant. On a donc :\(F_{n+2}=F_{n+1}+F_n\) pour
+                tout
+                entier <i>n</i> strictement positif. On choisit alors de poser \(F_0=0\), de manière que cette équation
+                soit
+                encore
+                vérifiée pour \(n=0\).
+            </p>
+            <p>On obtient ainsi la forme récurrente de la suite de Fibonacci : chaque terme de cette suite est
+                la somme des
+                deux termes précédents ; pour obtenir chacun de ces deux termes, il faut faire la somme de leurs termes
+                précédents… et ainsi de suite………..
+            </p>
+
+            <p>Analysons le problème pour mettre en place un algorithme qui permet de calculer les 25 premiers termes de
+                cette suite.</p>
+            <p>
+            <ul>
+                <li>Pour calculer un terme il nous faut les deux termes précédents. Donc il faut initialiser au départ
+                    lesdeux premiers termes de la suite. (on les notera f0 et f1).</li>
+                <li> Les termes de la suite sont des entiers.</li>
+                <li> notera f un terme quelconque de la suite.</li>
+                <li>Faire afficher f0 et f1.- On doit calculer (f2) f = f0 + f1 ; (f3) f = f1 +f2 ; etc. . .. (une
+                    boucle
+                    while (ou for) s’impose.
+                <li> On doit afficher les différents fi jusqu’à f25.</li>
+            </ul>
+            Ecrire le programme correspondant en version récursive et itérative.
+            </p>
+        </div>
+
+
+        <div class="exo">
+            <p><b>Exercice 6 :</b>
+                L’objectif de cet exercice est de réaliser la fractale de Von Koch à l’aide du module
+                python turtle.Il faudra lire attentivement la documentation. Une fractale est une sorte de courbe
+                mathématique un peu complexe riche en détail, et quipossède une
+                propriété intéressante visuellement : lorsque l’on regarde des détails de petite taille, on retrouve des
+                formes correspondant aux détails de plus grande taille (auto-similarité). Cela nous rappelle étrangement
+                la
+                récursivité ! La première courbe à tracer a été imaginée en 1904 par le mathématicien suédois Niels
+                Fabian
+                Helge Von Koch. Le principe est simple : on divise un segment initial en trois morceaux, et on construit
+                un triangle équilatéral sans base au-dessus du morceau central. On réitère le processus nf ois, n est
+                appelé
+                l’ordre. Dans la figure suivante, on voit les ordres 0,1,2 et 3 de cette fractale.
+
+
+               
+
+
+            <ul>
+                <li> Proposer une fonction récursive permettant de dessiner la fractale de Von Koch en lui donnant comme
+                    paramètre l'ordre et la longueur du segment initial.
+                </li>
+                <li>Le flocon de Koch s'obtient de la même façon que la fractale précédente, en partant d'un
+                    triangle équilatéral au lieu d'un segment de droite, et en effectuant les modifications en orientant
+                    les triangles vers l'extérieur.
+                </li> 
+               
+
+                <img id="koch1" src=" img/courbe_VonKoch.png" class="img-fluid" alt="Koch1">
+             
+
+                    <li>
+                    Proposer une fonction permettant de faire le flocon de Koch complet à partir de la fonction réalisée
+                    précédente.</li>
+                </ul>
+                <img id="koch2" src="img/flocon_Koch.png" class="img-fluid" alt="Koch2">
+
+                    </p>
+        </div>
     </div>
     <!-- JavaScript Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
