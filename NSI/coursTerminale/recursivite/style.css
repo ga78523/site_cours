@@ -83,4 +83,16 @@ max-width: 50%;
         color: green
         ;
     }
+    .exo{
+        color: green
+        ;
+    }
+    pre.algo{
+        border-top: solid black 1px;
+        border-bottom: solid black 1px;
+        margin-left: 10px;
+        background-color:rgb(245, 245, 245);
+        text-align: left;
+
+    }
 

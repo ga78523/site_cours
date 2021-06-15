@@ -51,7 +51,8 @@
         </p>
         <p>Cette formulation peut nous apparaître simple et intuitive.</p>
 
-        <p class="exo"><b>Exercice 1 :</b> Écrire une fonction somme(n) qui retourne la somme des <i>n</i> premiers entiers.</p>
+        <p class="exo"><b>Exercice 1 :</b> Écrire une fonction somme(n) qui retourne la somme des <i>n</i> premiers
+            entiers.</p>
         <p>Or ce code n’est pas directement lié à la formule précédente. En effet, il n’y a rien dans cette formule qui
             laisse penser qu’il faille une variable intermédiaire pour calculer cette somme.
         </p>
@@ -103,6 +104,70 @@
             définition.
             Pour les plus rapides, écrire la version itérative.</p>
 
+        <p class="exo"><b>Exercice 3 :</b>
+            Écrire une fonction récursive <code>boucle(i,k)</code> qui affiche les entiers entre <code>i</code> et
+            <code>k</code>. Par exemple,
+            <code>boucle(0,3)</code> affiche 0, 1, 2, 3.
+            Pour les plus rapides, écrire la version itérative.
+        </p>
+
+        <p class="exo"><b>Exercice 4 :</b>
+            La méthode du paysan russe est un très vieil algorithme de multiplication de deux nombres entiers déjà
+            décrit, sous forme légèrement différente, sur un papyrus égyptien rédigé autour de 1650 avant J.-C. Il
+            s’agissait de la principale méthode de calcul en Europe avant l’introduction des chiffres arabes.</p>
+        <p class="exo">
+            Les ordinateurs l’ont utilisé avant que la multiplication ne soit directement intégré dans le processeur
+            sous forme de circuit électronique. Sous une forme moderne, il peut être décrit par le programme suivant</p>
+
+        <pre class="algo">
+            <code>
+Fonction multiplication(x,y):
+    p=0
+    TANT QUE x>0:
+        p=p+y
+    x=x//2
+    y=y+y
+    Retourner p
+        </code>
+        </pre>
+
+        <p class="exo"> 
+           
+           <ol><li>Appliquer cette fonction pour effectuer la multiplication de 105 par 253. Détailler les étapes
+            dans le tableau suivant :</li></ol> 
+     
+        </p>
+
+        <style type="text/css">
+            .tg  {border-collapse:collapse;border-spacing:0;margin:auto}
+            .tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+              overflow:hidden;padding:10px 5px;word-break:normal;}
+            .tg th{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+              font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;width:30px}
+            .tg .tg-baqh{text-align:center;vertical-align:top}
+            .tg .tg-amwm{font-weight:bold;text-align:center;vertical-align:top}
+            </style>
+            <table class="tg">
+            <thead>
+              <tr>
+                <th class="tg-amwm">x</th>
+                <th class="tg-amwm">y</th>
+                <th class="tg-amwm">p</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="tg-baqh">105</td>
+                <td class="tg-baqh">253</td>
+                <td class="tg-baqh">...</td>
+              </tr>
+              <tr>
+                <td class="tg-baqh">...</td>
+                <td class="tg-baqh">...</td>
+                <td class="tg-baqh">...</td>
+              </tr>
+            </tbody>
+            </table>
     </div>
     <!-- JavaScript Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
