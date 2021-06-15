@@ -101,15 +101,14 @@ max-width: 50%;
         margin-bottom: 10%;
     }
 
-   
-    p.exo,ol,li{
-        color: green;
-    }
 
     .exo{
-        color: green;
-        border-left:solid green; 
-        padding-left :10px;
+        color: black;
+        margin-left: 5px;
+        border-left:solid rgb(206, 196, 196);; 
+        padding-left :15px;
+        
+        
     }
     pre.algo{
         border-top: solid black 1px;
