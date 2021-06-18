@@ -1,0 +1,121 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color:rgb(206, 196, 196);
+  }
+
+img{
+    display: block;
+    width:90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#img_css1
+{
+max-width: 50%;
+}
+
+#boite{
+    max-width: 50%;
+}
+#capture1{
+    max-width: 50%;
+}
+
+#capture2{
+    max-width: 45%;
+}
+#capture3{
+    max-width: 35%;
+}
+#capture4{
+    max-width: 20%;
+}
+#capture5{
+    max-width: 70%;
+}
+
+#travail{
+    max-width: 50%;
+}
+
+#koch1{
+    max-width: 15%;
+}
+#koch2{
+    max-width:25%;
+}
+
+.container{
+    max-width:900px;
+    background-color : white;
+    margin-left: auto;
+    margin-right: auto;
+    border:solid black;
+    padding-left: 2%;
+    padding-right: 2%;
+    padding-top: 4%;
+    padding-bottom: 4%;
+    }
+
+    p{
+        text-align: justify;
+
+    }
+
+    body {
+        /* On initialise le compteur h1 et h2*/
+        counter-reset: h1 h2 h3, h4;
+    }
+    /* before est un pseudo-élément qui, combiné avec content, permet d'ajouter du texte avant un élément */ 
+    h2:before {
+        /* On insert la valeur du compteur h1 suivi d'un point et d'un espace */
+        content: counter(h2)". "  ;
+        /* On incrémente la valeur du compteur h1 */
+        counter-increment: h2 ;
+    }
+
+    h3:before {
+        /* On insert la valeur du compteur h1 suivi d'un point et d'un espace */
+        content: "  "counter(h2)"." counter(h3)" ";
+        /* On incrémente la valeur du compteur h1 */
+        counter-increment: h3 ;
+    }
+
+    h1{
+        text-align: center;
+            /* On réinitialise le compteur pour le niveau deux à chaque titre de niveau 1 */
+            counter-reset: h2 h3;
+        }
+    h2{
+        font-size:x-large;
+                /* On réinitialise le compteur pour le niveau trois à chaque titre de niveau 2 */
+        counter-reset: h3;
+    }
+    h3{
+        font-size: larger;
+    }
+
+    p.codepen{
+        margin-bottom: 10%;
+    }
+
+
+    .exo{
+        color: black;
+        margin-left: 5px;
+        border-left:solid rgb(206, 196, 196);; 
+        padding-left :15px;
+        
+        
+    }
+    pre.algo{
+        border-top: solid black 1px;
+        border-bottom: solid black 1px;
+        margin-left: 10px;
+        background-color:rgb(245, 245, 245);
+        text-align: left;
+
+    }
+
