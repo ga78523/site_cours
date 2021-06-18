@@ -1,5 +1,6 @@
 body{
-    background-color: rgb(206, 196, 196);;
+    background-color: rgb(113, 127, 145);
+
 }
 
 .container{
@@ -59,7 +60,7 @@ margin:auto;
 }
 td{
     text-align:center;
-    width=600px;
+    width:600px;
  }
 
 h2{
@@ -95,7 +96,7 @@ color:red;
 }
 
 a{
-    color :blue;
+    color :rgb(113, 127, 145);
     margin:auto;
     }
 
